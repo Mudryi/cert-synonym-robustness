@@ -1,0 +1,350 @@
+<title>Substitution Validity Audit</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600&family=JetBrains+Mono:wght@400;600&family=Unbounded:wght@500&display=swap">
+<style>
+/* Layout: reading desk. Item queue on the left, the pair under review in the centre column, rubric directly below it. */
+:root {
+  --bg: #f3f4f1; --panel: #ffffff; --fg: #1d2421; --muted: #5f6b66; --line: #d8ddd8;
+  --accent: #1f5f8b; --accent-soft: #e2edf5;
+  --mark-new: #fbe7a1; --mark-old: #f6d3cf;
+  --yes: #2e7d4f; --part: #b27a12; --no: #b33a2e;
+  --yes-soft: #dff0e5; --part-soft: #f8ecd2; --no-soft: #f6dedb;
+  --display: "Unbounded", "Golos Text", system-ui, sans-serif;
+  --body: "Golos Text", "Segoe UI", system-ui, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #151a18; --panel: #1d2422; --fg: #e4e9e6; --muted: #9aa6a0; --line: #303a36;
+  --accent: #79b4dc; --accent-soft: #1f3342; --mark-new: #5a4a12; --mark-old: #5a2a26;
+  --yes: #6cc391; --part: #e0b155; --no: #ec8579; --yes-soft: #1f3a2a; --part-soft: #3d3118; --no-soft: #43231f;
+  color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #151a18; --panel: #1d2422; --fg: #e4e9e6; --muted: #9aa6a0; --line: #303a36;
+  --accent: #79b4dc; --accent-soft: #1f3342; --mark-new: #5a4a12; --mark-old: #5a2a26;
+  --yes: #6cc391; --part: #e0b155; --no: #ec8579; --yes-soft: #1f3a2a; --part-soft: #3d3118; --no-soft: #43231f;
+  color-scheme: dark }
+* { box-sizing: border-box }
+body { background: var(--bg); color: var(--fg); font: 15px/1.5 var(--body); padding-inline: 16px; padding-block: 0 40px }
+header { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--bg); padding-block: 12px; border-bottom: 1px solid var(--line);
+  display: flex; flex-wrap: wrap; gap: 10px 20px; align-items: center }
+h1 { font: 500 17px/1.2 var(--display); margin: 0; letter-spacing: .01em; text-wrap: balance }
+.meter { flex: 1 1 220px; min-width: 0; display: flex; align-items: center; gap: 10px; font: 13px var(--mono); color: var(--muted); font-variant-numeric: tabular-nums }
+.bar { flex: 1; height: 6px; background: var(--line); border-radius: 3px; overflow: hidden }
+.bar > i { display: block; height: 100%; background: var(--accent); width: 0 }
+.tools { display: flex; flex-wrap: wrap; gap: 8px; align-items: center }
+.store { font: 12px var(--mono); padding: 2px 8px; border-radius: 10px; background: var(--accent-soft); color: var(--accent) }
+.store.local { background: var(--part-soft); color: var(--part) }
+input[type=text], textarea { font: inherit; color: var(--fg); background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 6px 8px }
+#annot { width: 7em; font-family: var(--mono) }
+button { font: inherit; color: var(--fg); background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 6px 12px; cursor: pointer }
+button:hover { border-color: var(--accent) }
+button:focus-visible, input:focus-visible, textarea:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px }
+.wrap { display: grid; grid-template-columns: 210px minmax(0, 1fr); gap: 24px; max-width: 1180px; margin: 20px auto 0 }
+@media (max-width: 760px) { .wrap { grid-template-columns: minmax(0, 1fr) } nav { order: 2 } }
+nav { min-width: 0 }
+nav .filters { display: flex; gap: 6px; margin-bottom: 8px; flex-wrap: wrap }
+nav .filters button { padding: 3px 8px; font-size: 12px }
+nav .filters button[aria-pressed=true] { background: var(--accent-soft); border-color: var(--accent); color: var(--accent) }
+#queue { display: grid; grid-template-columns: repeat(auto-fill, minmax(44px, 1fr)); gap: 4px; max-height: 70vh; overflow-y: auto; padding: 2px }
+#queue button { padding: 3px 0; font: 11px var(--mono); border-radius: 4px; font-variant-numeric: tabular-nums }
+#queue button.cur { outline: 2px solid var(--accent) }
+#queue button.yes { background: var(--yes-soft); border-color: var(--yes) }
+#queue button.part { background: var(--part-soft); border-color: var(--part) }
+#queue button.no { background: var(--no-soft); border-color: var(--no) }
+main { min-width: 0; display: grid; gap: 16px; align-content: start }
+.pair { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 18px 20px; display: grid; gap: 14px }
+.meta { display: flex; gap: 12px; flex-wrap: wrap; font: 12px var(--mono); color: var(--muted); text-transform: uppercase; letter-spacing: .06em }
+.q { display: grid; grid-template-columns: 5.5em minmax(0, 1fr); gap: 4px 12px; align-items: baseline }
+.q .lab { font: 12px var(--mono); color: var(--muted); text-transform: uppercase; letter-spacing: .06em }
+.q .txt { font-size: 18px; line-height: 1.45; overflow-wrap: anywhere }
+mark.old { background: var(--mark-old); color: inherit; padding: 0 2px; border-radius: 2px }
+mark.new { background: var(--mark-new); color: inherit; padding: 0 2px; border-radius: 2px }
+.subs { font: 13px var(--mono); color: var(--muted); overflow-wrap: anywhere }
+details { border-top: 1px dashed var(--line); padding-top: 10px }
+summary { cursor: pointer; color: var(--accent); font-size: 13px }
+.ctx { white-space: pre-wrap; font-size: 13.5px; color: var(--muted); max-height: 16em; overflow-y: auto; margin-top: 8px }
+.rubric { display: grid; gap: 14px }
+.row { display: grid; grid-template-columns: 9em minmax(0, 1fr); gap: 8px 14px; align-items: start }
+@media (max-width: 520px) { .row { grid-template-columns: minmax(0, 1fr) } }
+.row > .lab { font-weight: 600; padding-top: 6px }
+.row > .lab small { display: block; font-weight: 400; color: var(--muted); font-size: 12px }
+.opts { display: flex; flex-wrap: wrap; gap: 6px }
+.opts button kbd { font: 11px var(--mono); color: var(--muted); margin-right: 6px }
+.opts button[aria-pressed=true].y { background: var(--yes-soft); border-color: var(--yes); color: var(--yes) }
+.opts button[aria-pressed=true].p { background: var(--part-soft); border-color: var(--part); color: var(--part) }
+.opts button[aria-pressed=true].n { background: var(--no-soft); border-color: var(--no); color: var(--no) }
+.opts button[aria-pressed=true].f { background: var(--accent-soft); border-color: var(--accent); color: var(--accent) }
+#note { width: 100%; min-height: 2.6em; resize: vertical }
+.navrow { display: flex; gap: 8px; flex-wrap: wrap; align-items: center }
+.navrow .sp { flex: 1 }
+.hint { font-size: 12.5px; color: var(--muted) }
+.guide { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 4px 18px }
+.guide p, .guide li { max-width: 68ch; font-size: 13.5px }
+#io { display: grid; gap: 8px }
+#io textarea { width: 100%; min-height: 8em; font: 12px var(--mono) }
+#msg { font-size: 13px; color: var(--accent); min-height: 1.2em }
+@media (prefers-reduced-motion: no-preference) { .bar > i { transition: width .3s } }
+</style>
+
+<header>
+  <h1>Substitution Validity Audit</h1>
+  <div class="meter"><span id="count">0 / 0</span><div class="bar"><i id="barfill"></i></div></div>
+  <div class="tools">
+    <label class="hint" for="annot">Annotator</label><input type="text" id="annot" value="A1" maxlength="20">
+    <span class="store local" id="store">this browser</span>
+    <button id="exportBtn" type="button">Export</button>
+  </div>
+</header>
+
+<div class="wrap">
+  <nav aria-label="Items">
+    <div class="filters">
+      <button type="button" data-f="all" aria-pressed="true">All</button>
+      <button type="button" data-f="todo" aria-pressed="false">To do</button>
+      <button type="button" data-f="flag" aria-pressed="false">Unsure</button>
+    </div>
+    <div id="queue"></div>
+  </nav>
+
+  <main>
+    <section class="pair" aria-live="polite">
+      <div class="meta"><span id="itemId">—</span><span id="itemSubset"></span><span id="itemSubs"></span></div>
+      <div class="q"><span class="lab">Original</span><span class="txt" id="orig"></span></div>
+      <div class="q"><span class="lab">Variant</span><span class="txt" id="vari"></span></div>
+      <div class="subs" id="subs"></div>
+      <details id="ctxBox"><summary>Source passage (optional context)</summary><div class="ctx" id="ctx"></div></details>
+    </section>
+
+    <section class="pair rubric" aria-label="Verdict">
+      <div class="row"><div class="lab">Same information need?<small>Would an analyst get the same documents?</small></div>
+        <div class="opts" data-field="meaning">
+          <button type="button" class="y" data-v="yes"><kbd>1</kbd>Yes</button>
+          <button type="button" class="p" data-v="partly"><kbd>2</kbd>Partly</button>
+          <button type="button" class="n" data-v="no"><kbd>3</kbd>No</button>
+        </div></div>
+      <div class="row"><div class="lab">Fluency<small>As Ukrainian text</small></div>
+        <div class="opts" data-field="fluency">
+          <button type="button" class="y" data-v="natural"><kbd>A</kbd>Natural</button>
+          <button type="button" class="p" data-v="awkward"><kbd>S</kbd>Awkward</button>
+          <button type="button" class="n" data-v="ungrammatical"><kbd>D</kbd>Ungrammatical</button>
+        </div></div>
+      <div class="row"><div class="lab">Issues<small>Tick all that apply</small></div>
+        <div class="opts" data-field="issues" data-multi="1">
+          <button type="button" class="f" data-v="wrong_sense">Wrong word sense</button>
+          <button type="button" class="f" data-v="term_changed">Technical term changed</button>
+          <button type="button" class="f" data-v="scope_shift">Broader / narrower</button>
+          <button type="button" class="f" data-v="morphology">Agreement / inflection</button>
+          <button type="button" class="f" data-v="register">Odd register / archaic</button>
+          <button type="button" class="f" data-v="other">Other</button>
+        </div></div>
+      <div class="row"><div class="lab">Unsure</div>
+        <div class="opts" data-field="unsure" data-bool="1"><button type="button" class="f" data-v="1"><kbd>U</kbd>Mark as unsure</button></div></div>
+      <div class="row"><label class="lab" for="note">Note</label><textarea id="note" placeholder="Optional, e.g. a better synonym or why it fails"></textarea></div>
+      <div class="navrow">
+        <button type="button" id="prevBtn">← Previous</button>
+        <button type="button" id="nextBtn">Next →</button>
+        <button type="button" id="todoBtn">Next unlabelled <kbd>J</kbd></button>
+        <span class="sp"></span><span id="msg" role="status"></span>
+      </div>
+      <div class="hint">Keys: 1 2 3 meaning · A S D fluency · U unsure · ← → move · J next unlabelled. Changes save as you click.</div>
+    </section>
+
+    <details class="guide" open>
+      <summary>Guidelines</summary>
+      <ul>
+        <li>Read the variant as a search query typed by a CERT analyst. Mark <b>Yes</b> if it asks for the same information as the original, <b>Partly</b> if the request is recognisably the same but less specific, shifted or ambiguous, <b>No</b> if a different thing is asked for or the sentence stops making sense.</li>
+        <li>Judge the text only. Whether a search engine would still find the document does not matter here; ranking effects are joined in afterwards.</li>
+        <li>Fluency is separate: a variant can keep the meaning and still be awkward or ungrammatical.</li>
+        <li>Technical terms (e.g. шкідливе ПЗ, фішинговий лист) count as changed when the replacement is not an accepted term for the same thing in Ukrainian security texts.</li>
+        <li>Some items appear twice. Answer each time without looking back.</li>
+      </ul>
+    </details>
+
+    <details class="guide" id="ioBox">
+      <summary>Export / import verdicts</summary>
+      <div id="io">
+        <p class="hint">Export gives a JSON file with every verdict for the current annotator. If saving a file is not possible here, copy the text below. Import merges a previously exported file.</p>
+        <textarea id="ioText" readonly></textarea>
+        <div class="navrow"><button type="button" id="copyBtn">Copy JSON</button><label class="hint" for="importFile">Import</label><input type="file" id="importFile" accept=".json,application/json"></div>
+      </div>
+    </details>
+  </main>
+</div>
+
+<script>
+const ITEMS = /*__ITEMS__*/[];
+const $ = s => document.querySelector(s);
+const LS = k => "audit:" + k;
+const ls = {
+  get(k, d) { try { const v = localStorage.getItem(LS(k)); return v == null ? d : JSON.parse(v) } catch { return d } },
+  set(k, v) { try { localStorage.setItem(LS(k), JSON.stringify(v)) } catch {} }
+};
+let annot = ls.get("annot", "A1");
+let cur = ls.get("cur", 0);
+let filter = "all";
+let local = ls.get("v", {});          // {annot: {itemId: verdict}}
+let remote = {};                       // {annot: {itemId: verdict}} from db
+let db = null;
+
+const safe = s => (s || "A1").replace(/[^A-Za-z0-9_\-]/g, "").slice(0, 20) || "A1";
+const verdicts = () => Object.assign({}, local[annot] || {}, remote[annot] || {});
+const get = id => verdicts()[id] || {};
+
+function esc(s) { return s.replace(/[&<>"]/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c])) }
+function mark(text, words, cls) {
+  const ws = new Set(words.flatMap(w => w.split(/\s+/)).map(w => w.toLowerCase()));
+  return text.split(/([\s.,:;!?()«»"“”]+)/).map(t => ws.has(t.toLowerCase()) ? `<mark class="${cls}">${esc(t)}</mark>` : esc(t)).join("");
+}
+
+function render() {
+  const it = ITEMS[cur];
+  if (!it) return;
+  const v = get(it.id);
+  $("#itemId").textContent = `${it.id} · ${cur + 1} of ${ITEMS.length}`;
+  $("#itemSubset").textContent = it.subset === "title" ? "title query" : "section question";
+  $("#itemSubs").textContent = `${it.changed.length} word${it.changed.length > 1 ? "s" : ""} changed`;
+  $("#orig").innerHTML = mark(it.original, it.changed.map(c => c[0]), "old");
+  $("#vari").innerHTML = mark(it.variant, it.changed.map(c => c[1]), "new");
+  $("#subs").textContent = it.changed.map(c => `${c[0]} → ${c[1]}`).join("   ·   ");
+  $("#ctx").textContent = it.context;
+  document.querySelectorAll(".opts").forEach(g => {
+    const f = g.dataset.field;
+    g.querySelectorAll("button").forEach(b => {
+      const on = g.dataset.multi ? (v.issues || []).includes(b.dataset.v) : g.dataset.bool ? !!v.unsure : v[f] === b.dataset.v;
+      b.setAttribute("aria-pressed", on ? "true" : "false");
+    });
+  });
+  if (document.activeElement !== $("#note")) $("#note").value = v.note || "";
+  renderQueue();
+  ls.set("cur", cur);
+}
+
+function renderQueue() {
+  const V = verdicts();
+  const done = ITEMS.filter(i => V[i.id] && V[i.id].meaning && V[i.id].fluency).length;
+  $("#count").textContent = `${done} / ${ITEMS.length} done`;
+  $("#barfill").style.width = (100 * done / ITEMS.length) + "%";
+  const q = $("#queue");
+  q.textContent = "";
+  ITEMS.forEach((it, i) => {
+    const v = V[it.id] || {};
+    if (filter === "todo" && v.meaning && v.fluency) return;
+    if (filter === "flag" && !v.unsure) return;
+    const b = document.createElement("button");
+    b.type = "button";
+    b.textContent = it.id;
+    b.className = (i === cur ? "cur " : "") + ({yes: "yes", partly: "part", no: "no"}[v.meaning] || "");
+    b.title = v.meaning ? `${v.meaning} / ${v.fluency || "?"}` : "not labelled";
+    b.onclick = () => { cur = i; render() };
+    q.appendChild(b);
+  });
+}
+
+let pending = {};
+async function save(id, patch) {
+  const v = Object.assign({}, get(id), patch, {item_id: id, annotator: annot, t: new Date().toISOString()});
+  local[annot] = Object.assign({}, local[annot], {[id]: v});
+  ls.set("v", local);
+  render();
+  if (!db) return;
+  clearTimeout(pending[id]);
+  pending[id] = setTimeout(async () => {
+    try { await db.collection("verdicts").doc(`${annot}__${id}`).set(v); flash("Saved") }
+    catch (e) { flash(e && e.code === "invalid_argument" ? "Read-only here: saved in this browser only" : "Not saved online, kept in this browser"); }
+  }, 500);
+}
+
+function flash(t) { $("#msg").textContent = t; clearTimeout(flash.t); flash.t = setTimeout(() => $("#msg").textContent = "", 1800) }
+
+function choose(field, val) {
+  const it = ITEMS[cur], v = get(it.id);
+  if (field === "issues") {
+    const s = new Set(v.issues || []);
+    s.has(val) ? s.delete(val) : s.add(val);
+    save(it.id, {issues: [...s]});
+  } else if (field === "unsure") save(it.id, {unsure: !v.unsure});
+  else save(it.id, {[field]: v[field] === val ? null : val});
+}
+
+document.querySelectorAll(".opts").forEach(g => g.addEventListener("click", e => {
+  const b = e.target.closest("button"); if (b) choose(g.dataset.field, b.dataset.v);
+}));
+let noteT;
+$("#note").addEventListener("input", e => { const id = ITEMS[cur].id, val = e.target.value; clearTimeout(noteT); noteT = setTimeout(() => save(id, {note: val}), 600) });
+const go = d => { cur = Math.max(0, Math.min(ITEMS.length - 1, cur + d)); render() };
+const nextTodo = () => {
+  const V = verdicts();
+  for (let k = 1; k <= ITEMS.length; k++) { const i = (cur + k) % ITEMS.length, v = V[ITEMS[i].id]; if (!v || !v.meaning || !v.fluency) { cur = i; return render() } }
+  flash("All items labelled");
+};
+$("#prevBtn").onclick = () => go(-1);
+$("#nextBtn").onclick = () => go(1);
+$("#todoBtn").onclick = nextTodo;
+document.querySelectorAll(".filters button").forEach(b => b.onclick = () => {
+  filter = b.dataset.f;
+  document.querySelectorAll(".filters button").forEach(x => x.setAttribute("aria-pressed", x === b ? "true" : "false"));
+  renderQueue();
+});
+document.addEventListener("keydown", e => {
+  if (e.target.matches("input, textarea") || e.metaKey || e.ctrlKey || e.altKey) return;
+  const k = e.key.toLowerCase();
+  const map = {"1": ["meaning", "yes"], "2": ["meaning", "partly"], "3": ["meaning", "no"], a: ["fluency", "natural"], s: ["fluency", "awkward"], d: ["fluency", "ungrammatical"], u: ["unsure", "1"]};
+  if (map[k]) { choose(...map[k]); e.preventDefault() }
+  else if (k === "arrowright" || k === "enter") { go(1); e.preventDefault() }
+  else if (k === "arrowleft") { go(-1); e.preventDefault() }
+  else if (k === "j") { nextTodo(); e.preventDefault() }
+});
+$("#annot").value = annot;
+$("#annot").addEventListener("change", e => { annot = safe(e.target.value); e.target.value = annot; ls.set("annot", annot); render() });
+
+function exportJson() {
+  const V = verdicts();
+  return JSON.stringify({annotator: annot, exported: new Date().toISOString(), n_items: ITEMS.length,
+    verdicts: ITEMS.filter(i => V[i.id]).map(i => V[i.id])}, null, 1);
+}
+$("#exportBtn").onclick = async () => {
+  const txt = exportJson();
+  $("#ioText").value = txt;
+  $("#ioBox").open = true;
+  try {
+    const dl = window.claude ? await window.claude.use("downloads") : null;
+    if (!dl) throw 0;
+    await dl.save({filename: `audit_verdicts_${annot}.json`, data: txt});
+    flash("File saved");
+  } catch (e) {
+    if (!window.claude) {  // opened as a local file: a normal download works
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(new Blob([txt], {type: "application/json"}));
+      a.download = `audit_verdicts_${annot}.json`; a.click();
+    } else flash(e && e.code === "declined" ? "Save cancelled" : "Copy the JSON below instead");
+  }
+};
+$("#copyBtn").onclick = () => {
+  const t = $("#ioText"); t.value = t.value || exportJson();
+  navigator.clipboard.writeText(t.value).then(() => flash("Copied"), () => { t.select(); flash("Selected: press Ctrl+C") });
+};
+$("#importFile").onchange = async e => {
+  const f = e.target.files[0]; if (!f) return;
+  try {
+    const j = JSON.parse(await f.text());
+    const ids = new Set(ITEMS.map(i => i.id));
+    let n = 0;
+    for (const v of j.verdicts || []) if (ids.has(v.item_id)) { await save(v.item_id, Object.assign({}, v, {annotator: annot})); n++ }
+    flash(`Imported ${n} verdicts into ${annot}`);
+  } catch { flash("That file is not an exported verdict file") }
+};
+
+render();
+(async () => {
+  if (!window.claude || !window.claude.use) return;
+  db = await window.claude.use("db");
+  if (!db) return;
+  $("#store").textContent = "saved online";
+  $("#store").classList.remove("local");
+  db.collection("verdicts").onSnapshot(snap => {
+    remote = {};
+    snap.docs.forEach(d => { const v = d.data(); (remote[v.annotator] = remote[v.annotator] || {})[v.item_id] = v });
+    render();
+  }, () => { db = null; $("#store").textContent = "this browser"; $("#store").classList.add("local") });
+})();
+</script>

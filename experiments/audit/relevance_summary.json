@@ -1,0 +1,29 @@
+{
+ "attack": {
+  "n": 24,
+  "false_failure": 0.0,
+  "false_failure_ci": [
+   0.0,
+   0.13798057582897535
+  ],
+  "yes_or_partly": 0.125
+ },
+ "clean_fail": {
+  "n": 12,
+  "false_failure": 0.08333333333333333,
+  "false_failure_ci": [
+   0.014864709450773478,
+   0.35388592179859524
+  ],
+  "yes_or_partly": 0.5
+ },
+ "all": {
+  "n": 36,
+  "false_failure": 0.027777777777777776,
+  "false_failure_ci": [
+   0.004920280295569679,
+   0.141700337350308
+  ],
+  "yes_or_partly": 0.25
+ }
+}

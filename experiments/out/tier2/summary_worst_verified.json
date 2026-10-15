@@ -1,0 +1,1233 @@
+{
+ "n_queries": 586,
+ "n_variants": 7791,
+ "n_labelled": 557,
+ "main": [
+  {
+   "attacked": "bm25",
+   "evaluated": "bm25",
+   "validity": "auto",
+   "R@1 orig → att": "75.3 → 69.5",
+   "R@5 orig → att": "91.8 → 89.9",
+   "MRR orig → att": "0.824 → 0.787",
+   "ΔR@5 (pp)": "1.9 [0.8, 3.1]",
+   "successful queries": "11",
+   "success | orig. correct %": "2.0",
+   "raw": {
+    "R@1 o": 0.7525597269624573,
+    "R@1 a": 0.6945392491467577,
+    "R@5 o": 0.9180887372013652,
+    "R@5 a": 0.8993174061433447,
+    "MRR o": 0.8236042478208399,
+    "MRR a": 0.7872162070982137,
+    "d5": 0.01877133105802048,
+    "succ": 11.0,
+    "succ_cond": 0.020446096654275093
+   }
+  },
+  {
+   "attacked": "bm25",
+   "evaluated": "bm25",
+   "validity": "estimated (lenient)",
+   "R@1 orig → att": "75.2 → 69.4",
+   "R@5 orig → att": "91.8 → 89.9",
+   "MRR orig → att": "0.824 → 0.787",
+   "ΔR@5 (pp)": "1.9 [0.9, 3.1]",
+   "successful queries": "11.0 [5, 18]",
+   "success | orig. correct %": "2.1",
+   "succ. 95% (validity only)": "[11, 11]",
+   "raw": {
+    "R@1 o": 0.7524576785888694,
+    "R@1 a": 0.6944382819962182,
+    "R@5 o": 0.9180542038083543,
+    "R@5 a": 0.8992056110100839,
+    "MRR o": 0.8235332946760529,
+    "MRR a": 0.7871237517088457,
+    "d5": 0.018848592798270617,
+    "succ": 11.0455,
+    "succ_cond": 0.0205339549772734,
+    "succ_ci_validity_only": [
+     11.0,
+     11.0
+    ]
+   }
+  },
+  {
+   "attacked": "bm25",
+   "evaluated": "bm25",
+   "validity": "estimated (strict)",
+   "R@1 orig → att": "75.2 → 70.6",
+   "R@5 orig → att": "91.8 → 89.9",
+   "MRR orig → att": "0.823 → 0.794",
+   "ΔR@5 (pp)": "1.9 [0.9, 3.0]",
+   "successful queries": "11.0 [5, 18]",
+   "success | orig. correct %": "2.0",
+   "succ. 95% (validity only)": "[11, 11]",
+   "raw": {
+    "R@1 o": 0.7524407765546304,
+    "R@1 a": 0.7062468619382617,
+    "R@5 o": 0.9180151718977726,
+    "R@5 a": 0.8992712289508725,
+    "MRR o": 0.8234636167361922,
+    "MRR a": 0.7937381693123743,
+    "d5": 0.018743942946900096,
+    "succ": 10.9809,
+    "succ_cond": 0.02042066064357983,
+    "succ_ci_validity_only": [
+     11.0,
+     11.0
+    ]
+   }
+  },
+  {
+   "attacked": "bm25",
+   "evaluated": "bm25",
+   "validity": "verified (lenient)",
+   "R@1 orig → att": "75.3 → 69.5",
+   "R@5 orig → att": "91.8 → 89.9",
+   "MRR orig → att": "0.824 → 0.787",
+   "ΔR@5 (pp)": "1.9 [0.9, 3.0]",
+   "successful queries": "11",
+   "success | orig. correct %": "2.0",
+   "raw": {
+    "R@1 o": 0.7525597269624573,
+    "R@1 a": 0.6945392491467577,
+    "R@5 o": 0.9180887372013652,
+    "R@5 a": 0.8993174061433447,
+    "MRR o": 0.8236042478208399,
+    "MRR a": 0.7872162070982137,
+    "d5": 0.01877133105802048,
+    "succ": 11.0,
+    "succ_cond": 0.020446096654275093
+   }
+  },
+  {
+   "attacked": "bm25",
+   "evaluated": "bm25",
+   "validity": "verified (strict)",
+   "R@1 orig → att": "75.3 → 70.6",
+   "R@5 orig → att": "91.8 → 89.9",
+   "MRR orig → att": "0.824 → 0.794",
+   "ΔR@5 (pp)": "1.9 [0.9, 3.1]",
+   "successful queries": "11",
+   "success | orig. correct %": "2.0",
+   "raw": {
+    "R@1 o": 0.7525597269624573,
+    "R@1 a": 0.7064846416382252,
+    "R@5 o": 0.9180887372013652,
+    "R@5 a": 0.8993174061433447,
+    "MRR o": 0.8236042478208399,
+    "MRR a": 0.7939625135358818,
+    "d5": 0.01877133105802048,
+    "succ": 11.0,
+    "succ_cond": 0.020446096654275093
+   }
+  },
+  {
+   "attacked": "bm25",
+   "evaluated": "bm25",
+   "validity": "verified (natural)",
+   "R@1 orig → att": "75.3 → 71.0",
+   "R@5 orig → att": "91.8 → 90.1",
+   "MRR orig → att": "0.824 → 0.796",
+   "ΔR@5 (pp)": "1.7 [0.7, 2.8]",
+   "successful queries": "10",
+   "success | orig. correct %": "1.9",
+   "raw": {
+    "R@1 o": 0.7525597269624573,
+    "R@1 a": 0.7098976109215017,
+    "R@5 o": 0.9180887372013652,
+    "R@5 a": 0.9010238907849829,
+    "MRR o": 0.8236042478208399,
+    "MRR a": 0.7963074155053572,
+    "d5": 0.017064846416382253,
+    "succ": 10.0,
+    "succ_cond": 0.01858736059479554
+   }
+  },
+  {
+   "attacked": "bm25",
+   "evaluated": "bm25",
+   "validity": "estimated incl. rejected (strict)",
+   "R@1 orig → att": "75.2 → 65.9",
+   "R@5 orig → att": "91.8 → 87.1",
+   "MRR orig → att": "0.824 → 0.757",
+   "ΔR@5 (pp)": "4.8 [2.8, 7.0]",
+   "successful queries": "28.1 [17, 41]",
+   "success | orig. correct %": "5.2",
+   "succ. 95% (validity only)": "[22, 35]",
+   "raw": {
+    "R@1 o": 0.7524160543115215,
+    "R@1 a": 0.6592246434426181,
+    "R@5 o": 0.9180454156254398,
+    "R@5 a": 0.8707498779214075,
+    "MRR o": 0.8235670541458109,
+    "MRR a": 0.7571357658451922,
+    "d5": 0.04799722019164995,
+    "succ": 28.132,
+    "succ_cond": 0.05228566874950406,
+    "succ_ci_validity_only": [
+     22.0,
+     35.0
+    ]
+   }
+  },
+  {
+   "attacked": "bm25",
+   "evaluated": "bm25",
+   "validity": "verified incl. rejected (strict)",
+   "R@1 orig → att": "75.3 → 70.6",
+   "R@5 orig → att": "91.8 → 89.8",
+   "MRR orig → att": "0.824 → 0.794",
+   "ΔR@5 (pp)": "2.0 [0.9, 3.4]",
+   "successful queries": "12",
+   "success | orig. correct %": "2.2",
+   "raw": {
+    "R@1 o": 0.7525597269624573,
+    "R@1 a": 0.7064846416382252,
+    "R@5 o": 0.9180887372013652,
+    "R@5 a": 0.8976109215017065,
+    "MRR o": 0.8236042478208399,
+    "MRR a": 0.793834527187759,
+    "d5": 0.020477815699658702,
+    "succ": 12.0,
+    "succ_cond": 0.022304832713754646
+   }
+  },
+  {
+   "attacked": "e5_base",
+   "evaluated": "e5_base",
+   "validity": "auto",
+   "R@1 orig → att": "65.4 → 64.0",
+   "R@5 orig → att": "83.8 → 82.6",
+   "MRR orig → att": "0.736 → 0.722",
+   "ΔR@5 (pp)": "1.2 [0.4, 2.1]",
+   "successful queries": "7",
+   "success | orig. correct %": "1.4",
+   "raw": {
+    "R@1 o": 0.6535836177474402,
+    "R@1 a": 0.6399317406143344,
+    "R@5 o": 0.8378839590443686,
+    "R@5 a": 0.825938566552901,
+    "MRR o": 0.7359204549912987,
+    "MRR a": 0.7221182269738778,
+    "d5": 0.011945392491467578,
+    "succ": 7.0,
+    "succ_cond": 0.014256619144602852
+   }
+  },
+  {
+   "attacked": "e5_base",
+   "evaluated": "e5_base",
+   "validity": "estimated (lenient)",
+   "R@1 orig → att": "65.3 → 64.0",
+   "R@5 orig → att": "83.8 → 82.6",
+   "MRR orig → att": "0.736 → 0.722",
+   "ΔR@5 (pp)": "1.2 [0.4, 2.1]",
+   "successful queries": "7.0 [2, 12]",
+   "success | orig. correct %": "1.4",
+   "succ. 95% (validity only)": "[7, 7]",
+   "raw": {
+    "R@1 o": 0.6534231868084078,
+    "R@1 a": 0.6398394487084949,
+    "R@5 o": 0.837782133586099,
+    "R@5 a": 0.8258606797866285,
+    "MRR o": 0.7358161845831026,
+    "MRR a": 0.7220840223264541,
+    "d5": 0.011921453799470544,
+    "succ": 6.9876,
+    "succ_cond": 0.014242642384226576,
+    "succ_ci_validity_only": [
+     7.0,
+     7.0
+    ]
+   }
+  },
+  {
+   "attacked": "e5_base",
+   "evaluated": "e5_base",
+   "validity": "estimated (strict)",
+   "R@1 orig → att": "65.3 → 64.3",
+   "R@5 orig → att": "83.8 → 82.7",
+   "MRR orig → att": "0.736 → 0.725",
+   "ΔR@5 (pp)": "1.0 [0.3, 1.9]",
+   "successful queries": "6.0 [2, 11]",
+   "success | orig. correct %": "1.2",
+   "succ. 95% (validity only)": "[6, 6]",
+   "raw": {
+    "R@1 o": 0.6532671881739569,
+    "R@1 a": 0.643035785549915,
+    "R@5 o": 0.8376596955365467,
+    "R@5 a": 0.82747787476594,
+    "MRR o": 0.7356345629411511,
+    "MRR a": 0.7250054877837149,
+    "d5": 0.01018182077060677,
+    "succ": 5.9672,
+    "succ_cond": 0.012169732515667936,
+    "succ_ci_validity_only": [
+     6.0,
+     6.0
+    ]
+   }
+  },
+  {
+   "attacked": "e5_base",
+   "evaluated": "e5_base",
+   "validity": "verified (lenient)",
+   "R@1 orig → att": "65.4 → 64.0",
+   "R@5 orig → att": "83.8 → 82.6",
+   "MRR orig → att": "0.736 → 0.722",
+   "ΔR@5 (pp)": "1.2 [0.3, 2.1]",
+   "successful queries": "7",
+   "success | orig. correct %": "1.4",
+   "raw": {
+    "R@1 o": 0.6535836177474402,
+    "R@1 a": 0.6399317406143344,
+    "R@5 o": 0.8378839590443686,
+    "R@5 a": 0.825938566552901,
+    "MRR o": 0.7359204549912987,
+    "MRR a": 0.7221427303430912,
+    "d5": 0.011945392491467578,
+    "succ": 7.0,
+    "succ_cond": 0.014256619144602852
+   }
+  },
+  {
+   "attacked": "e5_base",
+   "evaluated": "e5_base",
+   "validity": "verified (strict)",
+   "R@1 orig → att": "65.4 → 64.3",
+   "R@5 orig → att": "83.8 → 82.8",
+   "MRR orig → att": "0.736 → 0.725",
+   "ΔR@5 (pp)": "1.0 [0.3, 1.9]",
+   "successful queries": "6",
+   "success | orig. correct %": "1.2",
+   "raw": {
+    "R@1 o": 0.6535836177474402,
+    "R@1 a": 0.643344709897611,
+    "R@5 o": 0.8378839590443686,
+    "R@5 a": 0.8276450511945392,
+    "MRR o": 0.7359204549912987,
+    "MRR a": 0.7252656457176129,
+    "d5": 0.010238907849829351,
+    "succ": 6.0,
+    "succ_cond": 0.012219959266802444
+   }
+  },
+  {
+   "attacked": "e5_base",
+   "evaluated": "e5_base",
+   "validity": "verified (natural)",
+   "R@1 orig → att": "65.4 → 64.3",
+   "R@5 orig → att": "83.8 → 82.8",
+   "MRR orig → att": "0.736 → 0.725",
+   "ΔR@5 (pp)": "1.0 [0.3, 1.9]",
+   "successful queries": "6",
+   "success | orig. correct %": "1.2",
+   "raw": {
+    "R@1 o": 0.6535836177474402,
+    "R@1 a": 0.643344709897611,
+    "R@5 o": 0.8378839590443686,
+    "R@5 a": 0.8276450511945392,
+    "MRR o": 0.7359204549912987,
+    "MRR a": 0.7254973139356291,
+    "d5": 0.010238907849829351,
+    "succ": 6.0,
+    "succ_cond": 0.012219959266802444
+   }
+  },
+  {
+   "attacked": "e5_base",
+   "evaluated": "e5_base",
+   "validity": "estimated incl. rejected (strict)",
+   "R@1 orig → att": "65.3 → 57.0",
+   "R@5 orig → att": "83.8 → 77.1",
+   "MRR orig → att": "0.736 → 0.664",
+   "ΔR@5 (pp)": "6.8 [4.3, 9.6]",
+   "successful queries": "39.7 [25, 56]",
+   "success | orig. correct %": "8.1",
+   "succ. 95% (validity only)": "[30, 49]",
+   "raw": {
+    "R@1 o": 0.6533842819835761,
+    "R@1 a": 0.5699458859884131,
+    "R@5 o": 0.8377289060989112,
+    "R@5 a": 0.7706305094931145,
+    "MRR o": 0.7357706669640808,
+    "MRR a": 0.6638103719781749,
+    "d5": 0.06781676122270974,
+    "succ": 39.7444,
+    "succ_cond": 0.08097749630537916,
+    "succ_ci_validity_only": [
+     30.0,
+     49.0
+    ]
+   }
+  },
+  {
+   "attacked": "e5_base",
+   "evaluated": "e5_base",
+   "validity": "verified incl. rejected (strict)",
+   "R@1 orig → att": "65.4 → 64.2",
+   "R@5 orig → att": "83.8 → 82.8",
+   "MRR orig → att": "0.736 → 0.724",
+   "ΔR@5 (pp)": "1.0 [0.3, 1.9]",
+   "successful queries": "6",
+   "success | orig. correct %": "1.2",
+   "raw": {
+    "R@1 o": 0.6535836177474402,
+    "R@1 a": 0.6416382252559727,
+    "R@5 o": 0.8378839590443686,
+    "R@5 a": 0.8276450511945392,
+    "MRR o": 0.7359204549912987,
+    "MRR a": 0.7244124033967937,
+    "d5": 0.010238907849829351,
+    "succ": 6.0,
+    "succ_cond": 0.012219959266802444
+   }
+  },
+  {
+   "attacked": "bge_m3",
+   "evaluated": "bge_m3",
+   "validity": "auto",
+   "R@1 orig → att": "69.8 → 68.8",
+   "R@5 orig → att": "88.9 → 88.2",
+   "MRR orig → att": "0.781 → 0.774",
+   "ΔR@5 (pp)": "0.7 [0.2, 1.4]",
+   "successful queries": "4",
+   "success | orig. correct %": "0.8",
+   "raw": {
+    "R@1 o": 0.6979522184300341,
+    "R@1 a": 0.6877133105802048,
+    "R@5 o": 0.8890784982935154,
+    "R@5 a": 0.8822525597269625,
+    "MRR o": 0.7814128026482007,
+    "MRR a": 0.7738543979899151,
+    "d5": 0.006825938566552901,
+    "succ": 4.0,
+    "succ_cond": 0.007677543186180422
+   }
+  },
+  {
+   "attacked": "bge_m3",
+   "evaluated": "bge_m3",
+   "validity": "estimated (lenient)",
+   "R@1 orig → att": "69.8 → 68.8",
+   "R@5 orig → att": "88.9 → 88.2",
+   "MRR orig → att": "0.781 → 0.774",
+   "ΔR@5 (pp)": "0.7 [0.2, 1.4]",
+   "successful queries": "4.0 [1, 8]",
+   "success | orig. correct %": "0.8",
+   "succ. 95% (validity only)": "[4, 4]",
+   "raw": {
+    "R@1 o": 0.697799957045173,
+    "R@1 a": 0.6876082832548651,
+    "R@5 o": 0.8891026438210589,
+    "R@5 a": 0.882279246292193,
+    "MRR o": 0.7813536140631776,
+    "MRR a": 0.7738198573638154,
+    "d5": 0.006823397528865857,
+    "succ": 4.0012,
+    "succ_cond": 0.0076753855924865146,
+    "succ_ci_validity_only": [
+     4.0,
+     4.0
+    ]
+   }
+  },
+  {
+   "attacked": "bge_m3",
+   "evaluated": "bge_m3",
+   "validity": "estimated (strict)",
+   "R@1 orig → att": "69.8 → 68.9",
+   "R@5 orig → att": "88.9 → 88.4",
+   "MRR orig → att": "0.781 → 0.776",
+   "ΔR@5 (pp)": "0.5 [0.0, 1.2]",
+   "successful queries": "3.0 [0, 7]",
+   "success | orig. correct %": "0.6",
+   "succ. 95% (validity only)": "[3, 3]",
+   "raw": {
+    "R@1 o": 0.6977034152544473,
+    "R@1 a": 0.6892030451007664,
+    "R@5 o": 0.8889814626108182,
+    "R@5 a": 0.88386558671447,
+    "MRR o": 0.781217371574621,
+    "MRR a": 0.7756991724564465,
+    "d5": 0.005115875896348337,
+    "succ": 3.0003,
+    "succ_cond": 0.005756183571438942,
+    "succ_ci_validity_only": [
+     3.0,
+     3.0
+    ]
+   }
+  },
+  {
+   "attacked": "bge_m3",
+   "evaluated": "bge_m3",
+   "validity": "verified (lenient)",
+   "R@1 orig → att": "69.8 → 68.8",
+   "R@5 orig → att": "88.9 → 88.2",
+   "MRR orig → att": "0.781 → 0.774",
+   "ΔR@5 (pp)": "0.7 [0.2, 1.5]",
+   "successful queries": "4",
+   "success | orig. correct %": "0.8",
+   "raw": {
+    "R@1 o": 0.6979522184300341,
+    "R@1 a": 0.6877133105802048,
+    "R@5 o": 0.8890784982935154,
+    "R@5 a": 0.8822525597269625,
+    "MRR o": 0.7814128026482007,
+    "MRR a": 0.7738543979899151,
+    "d5": 0.006825938566552901,
+    "succ": 4.0,
+    "succ_cond": 0.007677543186180422
+   }
+  },
+  {
+   "attacked": "bge_m3",
+   "evaluated": "bge_m3",
+   "validity": "verified (strict)",
+   "R@1 orig → att": "69.8 → 68.9",
+   "R@5 orig → att": "88.9 → 88.4",
+   "MRR orig → att": "0.781 → 0.776",
+   "ΔR@5 (pp)": "0.5 [0.0, 1.2]",
+   "successful queries": "3",
+   "success | orig. correct %": "0.6",
+   "raw": {
+    "R@1 o": 0.6979522184300341,
+    "R@1 a": 0.689419795221843,
+    "R@5 o": 0.8890784982935154,
+    "R@5 a": 0.8839590443686007,
+    "MRR o": 0.7814128026482007,
+    "MRR a": 0.7758754512737015,
+    "d5": 0.005119453924914676,
+    "succ": 3.0,
+    "succ_cond": 0.005758157389635317
+   }
+  },
+  {
+   "attacked": "bge_m3",
+   "evaluated": "bge_m3",
+   "validity": "verified (natural)",
+   "R@1 orig → att": "69.8 → 68.9",
+   "R@5 orig → att": "88.9 → 88.4",
+   "MRR orig → att": "0.781 → 0.776",
+   "ΔR@5 (pp)": "0.5 [0.0, 1.1]",
+   "successful queries": "3",
+   "success | orig. correct %": "0.6",
+   "raw": {
+    "R@1 o": 0.6979522184300341,
+    "R@1 a": 0.689419795221843,
+    "R@5 o": 0.8890784982935154,
+    "R@5 a": 0.8839590443686007,
+    "MRR o": 0.7814128026482007,
+    "MRR a": 0.7758754512737015,
+    "d5": 0.005119453924914676,
+    "succ": 3.0,
+    "succ_cond": 0.005758157389635317
+   }
+  },
+  {
+   "attacked": "bge_m3",
+   "evaluated": "bge_m3",
+   "validity": "estimated incl. rejected (strict)",
+   "R@1 orig → att": "69.8 → 63.8",
+   "R@5 orig → att": "88.9 → 84.5",
+   "MRR orig → att": "0.781 → 0.733",
+   "ΔR@5 (pp)": "4.5 [2.5, 6.7]",
+   "successful queries": "26.2 [15, 40]",
+   "success | orig. correct %": "5.0",
+   "succ. 95% (validity only)": "[18, 34]",
+   "raw": {
+    "R@1 o": 0.6979561689737142,
+    "R@1 a": 0.6376242341775318,
+    "R@5 o": 0.8890536589919645,
+    "R@5 a": 0.8450335544411893,
+    "MRR o": 0.7814384683601932,
+    "MRR a": 0.7331116001789355,
+    "d5": 0.044633331790797065,
+    "succ": 26.1651,
+    "succ_cond": 0.050215056919112606,
+    "succ_ci_validity_only": [
+     18.0,
+     34.0
+    ]
+   }
+  },
+  {
+   "attacked": "bge_m3",
+   "evaluated": "bge_m3",
+   "validity": "verified incl. rejected (strict)",
+   "R@1 orig → att": "69.8 → 68.9",
+   "R@5 orig → att": "88.9 → 88.4",
+   "MRR orig → att": "0.781 → 0.776",
+   "ΔR@5 (pp)": "0.5 [0.0, 1.2]",
+   "successful queries": "3",
+   "success | orig. correct %": "0.6",
+   "raw": {
+    "R@1 o": 0.6979522184300341,
+    "R@1 a": 0.689419795221843,
+    "R@5 o": 0.8890784982935154,
+    "R@5 a": 0.8839590443686007,
+    "MRR o": 0.7814128026482007,
+    "MRR a": 0.7758754512737015,
+    "d5": 0.005119453924914676,
+    "succ": 3.0,
+    "succ_cond": 0.005758157389635317
+   }
+  },
+  {
+   "attacked": "hybrid",
+   "evaluated": "hybrid",
+   "validity": "auto",
+   "R@1 orig → att": "75.9 → 72.9",
+   "R@5 orig → att": "91.8 → 91.1",
+   "MRR orig → att": "0.834 → 0.814",
+   "ΔR@5 (pp)": "0.7 [0.2, 1.4]",
+   "successful queries": "4",
+   "success | orig. correct %": "0.7",
+   "raw": {
+    "R@1 o": 0.7593856655290102,
+    "R@1 a": 0.7286689419795221,
+    "R@5 o": 0.9180887372013652,
+    "R@5 a": 0.9112627986348123,
+    "MRR o": 0.8338380614863504,
+    "MRR a": 0.8143275649822186,
+    "d5": 0.006825938566552901,
+    "succ": 4.0,
+    "succ_cond": 0.007434944237918215
+   }
+  },
+  {
+   "attacked": "hybrid",
+   "evaluated": "hybrid",
+   "validity": "estimated (lenient)",
+   "R@1 orig → att": "75.9 → 72.8",
+   "R@5 orig → att": "91.8 → 91.1",
+   "MRR orig → att": "0.834 → 0.815",
+   "ΔR@5 (pp)": "0.7 [0.2, 1.4]",
+   "successful queries": "4.0 [1, 8]",
+   "success | orig. correct %": "0.7",
+   "succ. 95% (validity only)": "[4, 4]",
+   "raw": {
+    "R@1 o": 0.7590512181182412,
+    "R@1 a": 0.7284353535937736,
+    "R@5 o": 0.9180922515117654,
+    "R@5 a": 0.91127689955687,
+    "MRR o": 0.8336539942261777,
+    "MRR a": 0.8146265494933792,
+    "d5": 0.006815351954895385,
+    "succ": 3.9957,
+    "succ_cond": 0.007421942803521206,
+    "succ_ci_validity_only": [
+     4.0,
+     4.0
+    ]
+   }
+  },
+  {
+   "attacked": "hybrid",
+   "evaluated": "hybrid",
+   "validity": "estimated (strict)",
+   "R@1 orig → att": "75.9 → 73.9",
+   "R@5 orig → att": "91.8 → 91.1",
+   "MRR orig → att": "0.834 → 0.820",
+   "ΔR@5 (pp)": "0.7 [0.2, 1.4]",
+   "successful queries": "4.0 [1, 8]",
+   "success | orig. correct %": "0.7",
+   "succ. 95% (validity only)": "[4, 4]",
+   "raw": {
+    "R@1 o": 0.7591638246511312,
+    "R@1 a": 0.7387398170523346,
+    "R@5 o": 0.9178959077401965,
+    "R@5 a": 0.9110537254617,
+    "MRR o": 0.833653863069756,
+    "MRR a": 0.8200882438340217,
+    "d5": 0.006842182278496457,
+    "succ": 4.0107,
+    "succ_cond": 0.007452913717616303,
+    "succ_ci_validity_only": [
+     4.0,
+     4.0
+    ]
+   }
+  },
+  {
+   "attacked": "hybrid",
+   "evaluated": "hybrid",
+   "validity": "verified (lenient)",
+   "R@1 orig → att": "75.9 → 72.9",
+   "R@5 orig → att": "91.8 → 91.1",
+   "MRR orig → att": "0.834 → 0.815",
+   "ΔR@5 (pp)": "0.7 [0.2, 1.4]",
+   "successful queries": "4",
+   "success | orig. correct %": "0.7",
+   "raw": {
+    "R@1 o": 0.7593856655290102,
+    "R@1 a": 0.7286689419795221,
+    "R@5 o": 0.9180887372013652,
+    "R@5 a": 0.9112627986348123,
+    "MRR o": 0.8338380614863504,
+    "MRR a": 0.8147541861426281,
+    "d5": 0.006825938566552901,
+    "succ": 4.0,
+    "succ_cond": 0.007434944237918215
+   }
+  },
+  {
+   "attacked": "hybrid",
+   "evaluated": "hybrid",
+   "validity": "verified (strict)",
+   "R@1 orig → att": "75.9 → 73.9",
+   "R@5 orig → att": "91.8 → 91.1",
+   "MRR orig → att": "0.834 → 0.820",
+   "ΔR@5 (pp)": "0.7 [0.0, 1.4]",
+   "successful queries": "4",
+   "success | orig. correct %": "0.7",
+   "raw": {
+    "R@1 o": 0.7593856655290102,
+    "R@1 a": 0.7389078498293515,
+    "R@5 o": 0.9180887372013652,
+    "R@5 a": 0.9112627986348123,
+    "MRR o": 0.8338380614863504,
+    "MRR a": 0.820249005851461,
+    "d5": 0.006825938566552901,
+    "succ": 4.0,
+    "succ_cond": 0.007434944237918215
+   }
+  },
+  {
+   "attacked": "hybrid",
+   "evaluated": "hybrid",
+   "validity": "verified (natural)",
+   "R@1 orig → att": "75.9 → 73.9",
+   "R@5 orig → att": "91.8 → 91.3",
+   "MRR orig → att": "0.834 → 0.821",
+   "ΔR@5 (pp)": "0.5 [0.0, 1.2]",
+   "successful queries": "3",
+   "success | orig. correct %": "0.6",
+   "raw": {
+    "R@1 o": 0.7593856655290102,
+    "R@1 a": 0.7389078498293515,
+    "R@5 o": 0.9180887372013652,
+    "R@5 a": 0.9129692832764505,
+    "MRR o": 0.8338380614863504,
+    "MRR a": 0.820858464652046,
+    "d5": 0.005119453924914676,
+    "succ": 3.0,
+    "succ_cond": 0.0055762081784386614
+   }
+  },
+  {
+   "attacked": "hybrid",
+   "evaluated": "hybrid",
+   "validity": "estimated incl. rejected (strict)",
+   "R@1 orig → att": "75.9 → 69.3",
+   "R@5 orig → att": "91.8 → 88.2",
+   "MRR orig → att": "0.834 → 0.784",
+   "ΔR@5 (pp)": "3.6 [1.8, 5.7]",
+   "successful queries": "21.2 [11, 33]",
+   "success | orig. correct %": "3.9",
+   "succ. 95% (validity only)": "[15, 28]",
+   "raw": {
+    "R@1 o": 0.7593628149544487,
+    "R@1 a": 0.6928038771797417,
+    "R@5 o": 0.9180464472981766,
+    "R@5 a": 0.8819325965069045,
+    "MRR o": 0.8338256809959481,
+    "MRR a": 0.7839170305221287,
+    "d5": 0.03611385079127215,
+    "succ": 21.1637,
+    "succ_cond": 0.0393418611722595,
+    "succ_ci_validity_only": [
+     15.0,
+     28.0
+    ]
+   }
+  },
+  {
+   "attacked": "hybrid",
+   "evaluated": "hybrid",
+   "validity": "verified incl. rejected (strict)",
+   "R@1 orig → att": "75.9 → 73.9",
+   "R@5 orig → att": "91.8 → 91.1",
+   "MRR orig → att": "0.834 → 0.820",
+   "ΔR@5 (pp)": "0.7 [0.2, 1.4]",
+   "successful queries": "4",
+   "success | orig. correct %": "0.7",
+   "raw": {
+    "R@1 o": 0.7593856655290102,
+    "R@1 a": 0.7389078498293515,
+    "R@5 o": 0.9180887372013652,
+    "R@5 a": 0.9112627986348123,
+    "MRR o": 0.8338380614863504,
+    "MRR a": 0.820249005851461,
+    "d5": 0.006825938566552901,
+    "succ": 4.0,
+    "succ_cond": 0.007434944237918215
+   }
+  }
+ ],
+ "outcomes": [
+  {
+   "attacked retriever": "bm25",
+   "validity": "auto",
+   "originally failing": 48,
+   "no attack chain": 12,
+   "chain, no valid variant": 363,
+   "valid, source stays in top 5": 152,
+   "successful attack": 11,
+   "coverage %": "30.3"
+  },
+  {
+   "attacked retriever": "bm25",
+   "validity": "verified (strict)",
+   "originally failing": 48,
+   "no attack chain": 12,
+   "chain, no valid variant": 386,
+   "valid, source stays in top 5": 129,
+   "successful attack": 11,
+   "coverage %": "26.0"
+  },
+  {
+   "attacked retriever": "bm25",
+   "validity": "verified (lenient)",
+   "originally failing": 48,
+   "no attack chain": 12,
+   "chain, no valid variant": 363,
+   "valid, source stays in top 5": 152,
+   "successful attack": 11,
+   "coverage %": "30.3"
+  },
+  {
+   "attacked retriever": "bm25",
+   "validity": "verified (natural)",
+   "originally failing": 48,
+   "no attack chain": 12,
+   "chain, no valid variant": 393,
+   "valid, source stays in top 5": 123,
+   "successful attack": 10,
+   "coverage %": "24.7"
+  },
+  {
+   "attacked retriever": "bm25",
+   "validity": "verified incl. rejected (strict)",
+   "originally failing": 48,
+   "no attack chain": 12,
+   "chain, no valid variant": 383,
+   "valid, source stays in top 5": 131,
+   "successful attack": 12,
+   "coverage %": "26.6"
+  },
+  {
+   "attacked retriever": "e5_base",
+   "validity": "auto",
+   "originally failing": 95,
+   "no attack chain": 3,
+   "chain, no valid variant": 444,
+   "valid, source stays in top 5": 37,
+   "successful attack": 7,
+   "coverage %": "9.0"
+  },
+  {
+   "attacked retriever": "e5_base",
+   "validity": "verified (strict)",
+   "originally failing": 95,
+   "no attack chain": 3,
+   "chain, no valid variant": 455,
+   "valid, source stays in top 5": 27,
+   "successful attack": 6,
+   "coverage %": "6.7"
+  },
+  {
+   "attacked retriever": "e5_base",
+   "validity": "verified (lenient)",
+   "originally failing": 95,
+   "no attack chain": 3,
+   "chain, no valid variant": 445,
+   "valid, source stays in top 5": 36,
+   "successful attack": 7,
+   "coverage %": "8.8"
+  },
+  {
+   "attacked retriever": "e5_base",
+   "validity": "verified (natural)",
+   "originally failing": 95,
+   "no attack chain": 3,
+   "chain, no valid variant": 455,
+   "valid, source stays in top 5": 27,
+   "successful attack": 6,
+   "coverage %": "6.7"
+  },
+  {
+   "attacked retriever": "e5_base",
+   "validity": "verified incl. rejected (strict)",
+   "originally failing": 95,
+   "no attack chain": 3,
+   "chain, no valid variant": 454,
+   "valid, source stays in top 5": 28,
+   "successful attack": 6,
+   "coverage %": "6.9"
+  },
+  {
+   "attacked retriever": "bge_m3",
+   "validity": "auto",
+   "originally failing": 65,
+   "no attack chain": 3,
+   "chain, no valid variant": 463,
+   "valid, source stays in top 5": 51,
+   "successful attack": 4,
+   "coverage %": "10.6"
+  },
+  {
+   "attacked retriever": "bge_m3",
+   "validity": "verified (strict)",
+   "originally failing": 65,
+   "no attack chain": 3,
+   "chain, no valid variant": 478,
+   "valid, source stays in top 5": 37,
+   "successful attack": 3,
+   "coverage %": "7.7"
+  },
+  {
+   "attacked retriever": "bge_m3",
+   "validity": "verified (lenient)",
+   "originally failing": 65,
+   "no attack chain": 3,
+   "chain, no valid variant": 464,
+   "valid, source stays in top 5": 50,
+   "successful attack": 4,
+   "coverage %": "10.4"
+  },
+  {
+   "attacked retriever": "bge_m3",
+   "validity": "verified (natural)",
+   "originally failing": 65,
+   "no attack chain": 3,
+   "chain, no valid variant": 480,
+   "valid, source stays in top 5": 35,
+   "successful attack": 3,
+   "coverage %": "7.3"
+  },
+  {
+   "attacked retriever": "bge_m3",
+   "validity": "verified incl. rejected (strict)",
+   "originally failing": 65,
+   "no attack chain": 3,
+   "chain, no valid variant": 478,
+   "valid, source stays in top 5": 37,
+   "successful attack": 3,
+   "coverage %": "7.7"
+  },
+  {
+   "attacked retriever": "hybrid",
+   "validity": "auto",
+   "originally failing": 48,
+   "no attack chain": 51,
+   "chain, no valid variant": 369,
+   "valid, source stays in top 5": 114,
+   "successful attack": 4,
+   "coverage %": "21.9"
+  },
+  {
+   "attacked retriever": "hybrid",
+   "validity": "verified (strict)",
+   "originally failing": 48,
+   "no attack chain": 51,
+   "chain, no valid variant": 384,
+   "valid, source stays in top 5": 99,
+   "successful attack": 4,
+   "coverage %": "19.1"
+  },
+  {
+   "attacked retriever": "hybrid",
+   "validity": "verified (lenient)",
+   "originally failing": 48,
+   "no attack chain": 51,
+   "chain, no valid variant": 369,
+   "valid, source stays in top 5": 114,
+   "successful attack": 4,
+   "coverage %": "21.9"
+  },
+  {
+   "attacked retriever": "hybrid",
+   "validity": "verified (natural)",
+   "originally failing": 48,
+   "no attack chain": 51,
+   "chain, no valid variant": 388,
+   "valid, source stays in top 5": 96,
+   "successful attack": 3,
+   "coverage %": "18.4"
+  },
+  {
+   "attacked retriever": "hybrid",
+   "validity": "verified incl. rejected (strict)",
+   "originally failing": 48,
+   "no attack chain": 51,
+   "chain, no valid variant": 384,
+   "valid, source stays in top 5": 99,
+   "successful attack": 4,
+   "coverage %": "19.1"
+  }
+ ],
+ "transfer": {
+  "auto": {
+   "bm25": {
+    "bm25": 0.01877133105802048,
+    "e5_base": 0.0034129692832764505,
+    "bge_m3": 0.008532423208191127,
+    "hybrid": 0.006825938566552901,
+    "e5_large": 0.0034129692832764505,
+    "m3_all": 0.0
+   },
+   "e5_base": {
+    "bm25": 0.0034129692832764505,
+    "e5_base": 0.011945392491467578,
+    "bge_m3": 0.006825938566552901,
+    "hybrid": 0.0017064846416382253,
+    "e5_large": 0.0034129692832764505,
+    "m3_all": 0.0034129692832764505
+   },
+   "bge_m3": {
+    "bm25": 0.0034129692832764505,
+    "e5_base": 0.011945392491467578,
+    "bge_m3": 0.006825938566552901,
+    "hybrid": 0.0017064846416382253,
+    "e5_large": 0.0017064846416382253,
+    "m3_all": 0.0017064846416382253
+   },
+   "hybrid": {
+    "bm25": 0.008532423208191127,
+    "e5_base": 0.0034129692832764505,
+    "bge_m3": 0.010238907849829351,
+    "hybrid": 0.006825938566552901,
+    "e5_large": 0.006825938566552901,
+    "m3_all": 0.005119453924914676
+   }
+  },
+  "estimated (strict)": {
+   "bm25": {
+    "bm25": 0.018743942946900096,
+    "e5_base": 0.0034151743591657323,
+    "bge_m3": 0.006866611209561987,
+    "hybrid": 0.006855941560547575,
+    "e5_large": 0.0017170570853837887,
+    "m3_all": 0.0
+   },
+   "e5_base": {
+    "bm25": 0.0034156994280316994,
+    "e5_base": 0.01018182077060677,
+    "bge_m3": 0.006860804019240691,
+    "hybrid": 0.0017105945730737466,
+    "e5_large": 0.0017105945730737466,
+    "m3_all": 0.0033990611896932343
+   },
+   "bge_m3": {
+    "bm25": 0.0034298987827384407,
+    "e5_base": 0.010207304324185824,
+    "bge_m3": 0.005115875896348337,
+    "hybrid": 0.0017105945730737466,
+    "e5_large": 0.0017105945730737466,
+    "m3_all": 0.0017105945730737466
+   },
+   "hybrid": {
+    "bm25": 0.008577005124986554,
+    "e5_base": 0.003406737366592321,
+    "bge_m3": 0.010262465633777787,
+    "hybrid": 0.006842182278496457,
+    "e5_large": 0.006857209575408555,
+    "m3_all": 0.005141372182088854
+   }
+  }
+ },
+ "finetune": [
+  {
+   "model": "ft_bge_m3_ft_aug",
+   "seeds": 5,
+   "attack from": "frozen bge_m3",
+   "validity": "auto",
+   "R@5 orig": "94.0 ± 0.4",
+   "R@5 att": "93.8 ± 0.4",
+   "ΔR@5 (pp)": "0.2 ± 0.2",
+   "successful queries": "1.4"
+  },
+  {
+   "model": "ft_bge_m3_ft_aug",
+   "seeds": 5,
+   "attack from": "frozen bge_m3",
+   "validity": "verified (strict)",
+   "R@5 orig": "94.0 ± 0.4",
+   "R@5 att": "93.9 ± 0.3",
+   "ΔR@5 (pp)": "0.2 ± 0.2",
+   "successful queries": "1.0"
+  },
+  {
+   "model": "bge_m3 (frozen)",
+   "seeds": 1,
+   "attack from": "frozen bge_m3",
+   "validity": "auto",
+   "R@5 orig": "88.9",
+   "R@5 att": "88.2",
+   "ΔR@5 (pp)": "0.7",
+   "successful queries": "4"
+  },
+  {
+   "model": "bge_m3 (frozen)",
+   "seeds": 1,
+   "attack from": "frozen bge_m3",
+   "validity": "verified (strict)",
+   "R@5 orig": "88.9",
+   "R@5 att": "88.4",
+   "ΔR@5 (pp)": "0.5",
+   "successful queries": "3"
+  },
+  {
+   "model": "ft_bge_m3_ft_orig",
+   "seeds": 5,
+   "attack from": "frozen bge_m3",
+   "validity": "auto",
+   "R@5 orig": "93.5 ± 0.5",
+   "R@5 att": "93.2 ± 0.4",
+   "ΔR@5 (pp)": "0.3 ± 0.2",
+   "successful queries": "2.0"
+  },
+  {
+   "model": "ft_bge_m3_ft_orig",
+   "seeds": 5,
+   "attack from": "frozen bge_m3",
+   "validity": "verified (strict)",
+   "R@5 orig": "93.5 ± 0.5",
+   "R@5 att": "93.3 ± 0.4",
+   "ΔR@5 (pp)": "0.3 ± 0.1",
+   "successful queries": "1.6"
+  },
+  {
+   "model": "ft_e5_base_ft_aug",
+   "seeds": 5,
+   "attack from": "frozen e5_base",
+   "validity": "auto",
+   "R@5 orig": "89.2 ± 0.7",
+   "R@5 att": "88.8 ± 0.5",
+   "ΔR@5 (pp)": "0.5 ± 0.2",
+   "successful queries": "2.8"
+  },
+  {
+   "model": "ft_e5_base_ft_aug",
+   "seeds": 5,
+   "attack from": "frozen e5_base",
+   "validity": "verified (strict)",
+   "R@5 orig": "89.2 ± 0.7",
+   "R@5 att": "88.9 ± 0.6",
+   "ΔR@5 (pp)": "0.3 ± 0.1",
+   "successful queries": "1.8"
+  },
+  {
+   "model": "e5_base (frozen)",
+   "seeds": 1,
+   "attack from": "frozen e5_base",
+   "validity": "auto",
+   "R@5 orig": "83.8",
+   "R@5 att": "82.6",
+   "ΔR@5 (pp)": "1.2",
+   "successful queries": "7"
+  },
+  {
+   "model": "e5_base (frozen)",
+   "seeds": 1,
+   "attack from": "frozen e5_base",
+   "validity": "verified (strict)",
+   "R@5 orig": "83.8",
+   "R@5 att": "82.8",
+   "ΔR@5 (pp)": "1.0",
+   "successful queries": "6"
+  },
+  {
+   "model": "ft_e5_base_ft_orig",
+   "seeds": 5,
+   "attack from": "frozen e5_base",
+   "validity": "auto",
+   "R@5 orig": "80.1 ± 0.7",
+   "R@5 att": "79.9 ± 0.8",
+   "ΔR@5 (pp)": "0.2 ± 0.1",
+   "successful queries": "1.2"
+  },
+  {
+   "model": "ft_e5_base_ft_orig",
+   "seeds": 5,
+   "attack from": "frozen e5_base",
+   "validity": "verified (strict)",
+   "R@5 orig": "80.1 ± 0.7",
+   "R@5 att": "80.0 ± 0.7",
+   "ΔR@5 (pp)": "0.1 ± 0.1",
+   "successful queries": "0.6"
+  }
+ ],
+ "random_vs_worst": [
+  {
+   "retriever": "bm25",
+   "queries with a valid random variant": 422,
+   "random: ΔR@5 (pp)": "1.1",
+   "random: successful queries": "6.3",
+   "worst-case (auto): ΔR@5 (pp)": "1.9",
+   "worst-case (auto): successful queries": 11
+  },
+  {
+   "retriever": "e5_base",
+   "queries with a valid random variant": 422,
+   "random: ΔR@5 (pp)": "1.3",
+   "random: successful queries": "7.8",
+   "worst-case (auto): ΔR@5 (pp)": "1.2",
+   "worst-case (auto): successful queries": 7
+  },
+  {
+   "retriever": "bge_m3",
+   "queries with a valid random variant": 422,
+   "random: ΔR@5 (pp)": "1.0",
+   "random: successful queries": "6.0",
+   "worst-case (auto): ΔR@5 (pp)": "0.7",
+   "worst-case (auto): successful queries": 4
+  },
+  {
+   "retriever": "hybrid",
+   "queries with a valid random variant": 422,
+   "random: ΔR@5 (pp)": "0.8",
+   "random: successful queries": "4.9",
+   "worst-case (auto): ΔR@5 (pp)": "0.7",
+   "worst-case (auto): successful queries": 4
+  }
+ ],
+ "budget": [
+  {
+   "attacked retriever": "bm25",
+   "chains searched": 1147,
+   "mean admissible candidates": "25.5",
+   "retriever calls / chain (mean)": "45.0",
+   "retriever calls / chain (max)": 142,
+   "judged variants / chain": "1.61"
+  },
+  {
+   "attacked retriever": "e5_base",
+   "chains searched": 1147,
+   "mean admissible candidates": "25.5",
+   "retriever calls / chain (mean)": "45.5",
+   "retriever calls / chain (max)": 143,
+   "judged variants / chain": "1.88"
+  },
+  {
+   "attacked retriever": "bge_m3",
+   "chains searched": 1147,
+   "mean admissible candidates": "25.5",
+   "retriever calls / chain (mean)": "45.5",
+   "retriever calls / chain (max)": 146,
+   "judged variants / chain": "1.87"
+  },
+  {
+   "attacked retriever": "hybrid",
+   "chains searched": 1147,
+   "mean admissible candidates": "25.5",
+   "retriever calls / chain (mean)": "43.7",
+   "retriever calls / chain (max)": 139,
+   "judged variants / chain": "1.43"
+  }
+ ]
+}

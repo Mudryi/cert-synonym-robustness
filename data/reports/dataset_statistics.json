@@ -1,0 +1,237 @@
+{
+  "generated_at": "2026-10-11T20:20:26Z",
+  "parser_version": "1.0.0",
+  "counts": {
+    "discovered": 228,
+    "discovered_in_listing": 222,
+    "discovered_only_via_links": 6,
+    "fetched_raw": 228,
+    "parsed": 228,
+    "failed": 0,
+    "failed_by_stage": {},
+    "not_found": 0
+  },
+  "discovery_coverage": {
+    "api_reported_listing_count": 227,
+    "listing_ids_found": 222,
+    "listing_coverage_vs_api_count": 0.978,
+    "listing_exhausted": true,
+    "discovered_via": {
+      "listing": 222,
+      "next": 222,
+      "sidebar": 60,
+      "previous": 222,
+      "variant:uk": 6,
+      "body_link": 18,
+      "variant:en": 6
+    },
+    "ids_found_only_via_links": [
+      "3761104",
+      "39925",
+      "40106",
+      "40135",
+      "6277840",
+      "6288490"
+    ],
+    "note": "The API 'count' refers to the Ukrainian listing; articles reachable only through previous/next, body links or language variants are additional. Discovery coverage is reported separately from parsing success."
+  },
+  "parsing": {
+    "parse_success_rate_of_fetched": 1.0,
+    "parse_success_rate_of_discovered": 1.0
+  },
+  "by_year": {
+    "2018": 16,
+    "2019": 15,
+    "2020": 21,
+    "2021": 11,
+    "2022": 68,
+    "2023": 40,
+    "2024": 34,
+    "2025": 12,
+    "2026": 11
+  },
+  "by_category": {
+    "ШПЗ": 141,
+    "Phishing": 35,
+    "Вразливість": 19,
+    "Про нас": 14,
+    "Рекомендації": 11,
+    "Microsoft": 9,
+    "Mail": 8,
+    "Intel": 6,
+    "Web Security": 3,
+    "Ddos": 3,
+    "Новини світу": 3,
+    "Covid - 19": 3,
+    "Cisco": 3,
+    "Спам": 3,
+    "XSS": 2,
+    "Adobe": 2,
+    "VMWare": 2,
+    "Zoom": 1,
+    "WordPress": 1,
+    "Oracle": 1,
+    "TeamViewer": 1,
+    "Linux": 1,
+    "Drupal": 1
+  },
+  "by_language": {
+    "uk": 221,
+    "en": 7
+  },
+  "by_source_lang": {
+    "uk": 222,
+    "en": 6
+  },
+  "length": {
+    "words": {
+      "min": 86,
+      "p05": 137,
+      "p25": 262,
+      "median": 429,
+      "p75": 674,
+      "p95": 1498,
+      "max": 8486,
+      "mean": 632.8,
+      "total": 144275
+    },
+    "chars": {
+      "min": 709,
+      "p05": 1160,
+      "p25": 2320,
+      "median": 3850,
+      "p75": 6660,
+      "p95": 16602,
+      "max": 67060,
+      "mean": 5931.4,
+      "total": 1352350
+    },
+    "words_histogram": {
+      "0-49": 0,
+      "50-99": 2,
+      "100-199": 32,
+      "200-399": 77,
+      "400-799": 72,
+      "800-1599": 36,
+      "1600-3199": 5,
+      "3200+": 4
+    }
+  },
+  "entities": {
+    "articles_with_type": {
+      "cert_ua_ids": 133,
+      "uac_ids": 141,
+      "cve_ids": 41,
+      "file_hashes": 156,
+      "ipv4_addresses": 141,
+      "domains": 192,
+      "urls": 195,
+      "email_addresses": 90
+    },
+    "articles_with_type_pct": {
+      "cert_ua_ids": 58.3,
+      "uac_ids": 61.8,
+      "cve_ids": 18.0,
+      "file_hashes": 68.4,
+      "ipv4_addresses": 61.8,
+      "domains": 84.2,
+      "urls": 85.5,
+      "email_addresses": 39.5
+    },
+    "total_mentions": {
+      "cert_ua_ids": 151,
+      "uac_ids": 291,
+      "cve_ids": 281,
+      "file_hashes": 4912,
+      "ipv4_addresses": 2372,
+      "domains": 3943,
+      "urls": 2454,
+      "email_addresses": 185
+    },
+    "unique_values": {
+      "cert_ua_ids": 137,
+      "uac_ids": 70,
+      "cve_ids": 127,
+      "file_hashes": 4407,
+      "ipv4_addresses": 1497,
+      "domains": 2190,
+      "urls": 2010,
+      "email_addresses": 143
+    },
+    "hash_types": {
+      "md5": 2333,
+      "sha256": 2243,
+      "sha1": 154
+    }
+  },
+  "duplicates": {
+    "exact_duplicate_groups": [],
+    "exact_duplicate_records": 0,
+    "near_duplicate_pairs": [
+      {
+        "a": "16",
+        "b": "2624",
+        "jaccard": 1.0
+      }
+    ],
+    "near_duplicate_threshold": 0.9
+  },
+  "missing_fields": {
+    "article_id": 0,
+    "url": 0,
+    "title": 0,
+    "publication_date": 0,
+    "categories": 0,
+    "language": 0,
+    "body_text": 0,
+    "body_markdown": 0,
+    "sections": 0,
+    "entities": 0,
+    "attachment_urls": 0,
+    "word_count": 0,
+    "content_hash": 0,
+    "scraped_at": 0,
+    "parser_version": 0,
+    "summary": 0,
+    "categories_empty": 1,
+    "sections_without_heading_only": 36
+  },
+  "language_variants": {
+    "pairs": [
+      [
+        "3761023",
+        "3761104"
+      ],
+      [
+        "39923",
+        "39925"
+      ],
+      [
+        "40102",
+        "40106"
+      ],
+      [
+        "40125",
+        "40135"
+      ],
+      [
+        "6277822",
+        "6277840"
+      ],
+      [
+        "6288271",
+        "6288490"
+      ]
+    ],
+    "variant_not_in_dataset": []
+  },
+  "failed_urls": 0,
+  "images": {
+    "articles_with_inline_images": 178,
+    "inline_images": 433
+  },
+  "attachments": {
+    "articles_with_attachments": 5,
+    "attachment_urls": 5
+  }
+}

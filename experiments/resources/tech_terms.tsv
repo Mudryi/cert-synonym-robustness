@@ -1,0 +1,44 @@
+# Technical lexical variation pairs (lemma phrases), applied in both directions.
+# Columns: term_a <TAB> term_b <TAB> kind (abbr|synonym|spelling|loan)
+# Words that are uppercase or contain Latin letters are kept invariant; the
+# other words are inflected to the case/number of the matched phrase.
+шкідливе програмне забезпечення	шкідливе ПЗ	abbr
+шкідливе програмне забезпечення	ШПЗ	abbr
+програмне забезпечення	ПЗ	abbr
+операційна система	ОС	abbr
+індикатор компрометації	IoC	abbr
+кібератака	кібернапад	synonym
+атака	напад	synonym
+вебсайт	сайт	synonym
+вебсайт	веб-сайт	spelling
+вебсайт	вебресурс	synonym
+вразливість	уразливість	spelling
+обліковий запис	акаунт	loan
+електронна пошта	е-пошта	abbr
+електронний лист	електронне повідомлення	synonym
+фішинговий лист	фішингове повідомлення	synonym
+застосунок	додаток	synonym
+пароль	гасло	synonym
+зловмисник	кіберзловмисник	synonym
+угруповання	група	synonym
+хакерське угруповання	кіберугруповання	synonym
+бекдор	backdoor	loan
+троян	троянська програма	synonym
+програма-вимагач	шифрувальник	synonym
+ботнет	бот-мережа	synonym
+командний сервер	сервер управління	synonym
+компрометація	злам	synonym
+інфікування	зараження	synonym
+кіберінцидент	інцидент кібербезпеки	synonym
+кібербезпека	кібернетична безпека	synonym
+інформаційна безпека	інфобезпека	abbr
+соціальна інженерія	соцінженерія	abbr
+завантажувач	лоадер	loan
+стилер	викрадач даних	synonym
+віддалений доступ	дистанційний доступ	synonym
+користувач	юзер	loan
+адміністратор	адмін	abbr
+комп'ютер	ПК	abbr
+посилання	лінк	loan
+вкладення	вкладений файл	synonym
+державний орган	орган державної влади	synonym

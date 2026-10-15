@@ -1,0 +1,106 @@
+{
+ "annotator": "A1",
+ "n_labelled": 887,
+ "repeat_pairs": 31,
+ "self_consistency_strict": 0.9354838709677419,
+ "self_consistency_meaning": 0.8709677419354839,
+ "duplicate_texts": {
+  "n": 52,
+  "strict_agree": 0.8269230769230769,
+  "conflicts": 9
+ },
+ "worst_census": {
+  "n": 509,
+  "strict": 0.8172888015717092,
+  "strict_ci": [
+   0.7813824289897778,
+   0.8484416726431631
+  ],
+  "lenient": 0.9901768172888016,
+  "lenient_ci": [
+   0.9772128977902234,
+   0.9957970920389948
+  ],
+  "natural": 0.756385068762279,
+  "natural_ci": [
+   0.7172624447854467,
+   0.7916666280510783
+  ]
+ },
+ "worst_outcome": {
+  "out of top 5": {
+   "n": 31,
+   "strict": 0.8064516129032258,
+   "strict_ci": [
+    0.6371939644454013,
+    0.9081311641365236
+   ]
+  },
+  "unchanged": {
+   "n": 374,
+   "strict": 0.839572192513369,
+   "strict_ci": [
+    0.7989531619814622,
+    0.8732862102845881
+   ]
+  },
+  "worsened": {
+   "n": 104,
+   "strict": 0.7403846153846154,
+   "strict_ci": [
+    0.6486317218538622,
+    0.81501125080233
+   ]
+  }
+ },
+ "agreement": {
+  "batch 1 (stratified)": {
+   "GPT judge (meaning)": {
+    "agreement": 0.7322834645669292,
+    "kappa_strict": 0.45486680974624416,
+    "kappa_lenient": 0.4761460035800452
+   },
+   "automatic rule (GPT + SBERT \u2265 0.8)": {
+    "agreement": 0.7322834645669292,
+    "kappa_strict": 0.45486680974624416,
+    "kappa_lenient": 0.4761460035800452
+   },
+   "local MamayLM p \u2265 0.5": {
+    "agreement": 0.6653543307086615,
+    "kappa_strict": 0.3028737487891509,
+    "kappa_lenient": 0.5365492074352833
+   }
+  },
+  "all labelled": {
+   "GPT judge (meaning)": {
+    "agreement": 0.7945007235890015,
+    "kappa_strict": 0.38716648346157717,
+    "kappa_lenient": 0.5467578710644677
+   },
+   "automatic rule (GPT + SBERT \u2265 0.8)": {
+    "agreement": 0.7945007235890015,
+    "kappa_strict": 0.38716648346157717,
+    "kappa_lenient": 0.5467578710644677
+   },
+   "local MamayLM p \u2265 0.5": {
+    "agreement": 0.7698986975397974,
+    "kappa_strict": 0.2436650259869896,
+    "kappa_lenient": 0.5468209936721199
+   }
+  }
+ },
+ "source_strict": {
+  "dict": 0.2857142857142857,
+  "llm": 0.8571428571428571,
+  "mlm": 0.42857142857142855,
+  "tech": 0.8928571428571429
+ },
+ "recheck": {
+  "n_items": 165,
+  "n_previously_labelled": 45,
+  "strict_agree": 0.7555555555555555,
+  "meaning_agree": 0.7555555555555555,
+  "strict_to_invalid": 7,
+  "invalid_to_strict": 4
+ }
+}

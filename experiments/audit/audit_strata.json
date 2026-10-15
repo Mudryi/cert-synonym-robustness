@@ -1,0 +1,394 @@
+[
+ {
+  "pool": "dose",
+  "group": "dict",
+  "auto_valid": false,
+  "rank_worse": false,
+  "n": 332
+ },
+ {
+  "pool": "dose",
+  "group": "dict",
+  "auto_valid": false,
+  "rank_worse": true,
+  "n": 257
+ },
+ {
+  "pool": "dose",
+  "group": "dict",
+  "auto_valid": true,
+  "rank_worse": false,
+  "n": 22
+ },
+ {
+  "pool": "dose",
+  "group": "dict",
+  "auto_valid": true,
+  "rank_worse": true,
+  "n": 16
+ },
+ {
+  "pool": "dose",
+  "group": "mlm",
+  "auto_valid": false,
+  "rank_worse": false,
+  "n": 483
+ },
+ {
+  "pool": "dose",
+  "group": "mlm",
+  "auto_valid": false,
+  "rank_worse": true,
+  "n": 534
+ },
+ {
+  "pool": "dose",
+  "group": "mlm",
+  "auto_valid": true,
+  "rank_worse": false,
+  "n": 15
+ },
+ {
+  "pool": "dose",
+  "group": "mlm",
+  "auto_valid": true,
+  "rank_worse": true,
+  "n": 14
+ },
+ {
+  "pool": "random",
+  "group": "dict",
+  "auto_valid": false,
+  "rank_worse": false,
+  "n": 869
+ },
+ {
+  "pool": "random",
+  "group": "dict",
+  "auto_valid": false,
+  "rank_worse": true,
+  "n": 343
+ },
+ {
+  "pool": "random",
+  "group": "dict",
+  "auto_valid": true,
+  "rank_worse": false,
+  "n": 300
+ },
+ {
+  "pool": "random",
+  "group": "dict",
+  "auto_valid": true,
+  "rank_worse": true,
+  "n": 68
+ },
+ {
+  "pool": "random",
+  "group": "llm",
+  "auto_valid": false,
+  "rank_worse": false,
+  "n": 137
+ },
+ {
+  "pool": "random",
+  "group": "llm",
+  "auto_valid": false,
+  "rank_worse": true,
+  "n": 67
+ },
+ {
+  "pool": "random",
+  "group": "llm",
+  "auto_valid": true,
+  "rank_worse": false,
+  "n": 995
+ },
+ {
+  "pool": "random",
+  "group": "llm",
+  "auto_valid": true,
+  "rank_worse": true,
+  "n": 307
+ },
+ {
+  "pool": "random",
+  "group": "mlm",
+  "auto_valid": false,
+  "rank_worse": false,
+  "n": 949
+ },
+ {
+  "pool": "random",
+  "group": "mlm",
+  "auto_valid": false,
+  "rank_worse": true,
+  "n": 523
+ },
+ {
+  "pool": "random",
+  "group": "mlm",
+  "auto_valid": true,
+  "rank_worse": false,
+  "n": 213
+ },
+ {
+  "pool": "random",
+  "group": "mlm",
+  "auto_valid": true,
+  "rank_worse": true,
+  "n": 53
+ },
+ {
+  "pool": "random",
+  "group": "tech",
+  "auto_valid": false,
+  "rank_worse": false,
+  "n": 53
+ },
+ {
+  "pool": "random",
+  "group": "tech",
+  "auto_valid": false,
+  "rank_worse": true,
+  "n": 24
+ },
+ {
+  "pool": "random",
+  "group": "tech",
+  "auto_valid": true,
+  "rank_worse": false,
+  "n": 377
+ },
+ {
+  "pool": "random",
+  "group": "tech",
+  "auto_valid": true,
+  "rank_worse": true,
+  "n": 136
+ },
+ {
+  "pool": "worst",
+  "group": "worst_dict|bge_m3",
+  "auto_valid": false,
+  "rank_worse": false,
+  "n": 678
+ },
+ {
+  "pool": "worst",
+  "group": "worst_dict|bge_m3",
+  "auto_valid": false,
+  "rank_worse": true,
+  "n": 279
+ },
+ {
+  "pool": "worst",
+  "group": "worst_dict|bge_m3",
+  "auto_valid": true,
+  "rank_worse": false,
+  "n": 47
+ },
+ {
+  "pool": "worst",
+  "group": "worst_dict|bge_m3",
+  "auto_valid": true,
+  "rank_worse": true,
+  "n": 12
+ },
+ {
+  "pool": "worst",
+  "group": "worst_dict|bm25",
+  "auto_valid": false,
+  "rank_worse": false,
+  "n": 423
+ },
+ {
+  "pool": "worst",
+  "group": "worst_dict|bm25",
+  "auto_valid": false,
+  "rank_worse": true,
+  "n": 205
+ },
+ {
+  "pool": "worst",
+  "group": "worst_dict|bm25",
+  "auto_valid": true,
+  "rank_worse": false,
+  "n": 110
+ },
+ {
+  "pool": "worst",
+  "group": "worst_dict|bm25",
+  "auto_valid": true,
+  "rank_worse": true,
+  "n": 33
+ },
+ {
+  "pool": "worst",
+  "group": "worst_dict|e5_base",
+  "auto_valid": false,
+  "rank_worse": false,
+  "n": 593
+ },
+ {
+  "pool": "worst",
+  "group": "worst_dict|e5_base",
+  "auto_valid": false,
+  "rank_worse": true,
+  "n": 374
+ },
+ {
+  "pool": "worst",
+  "group": "worst_dict|e5_base",
+  "auto_valid": true,
+  "rank_worse": false,
+  "n": 31
+ },
+ {
+  "pool": "worst",
+  "group": "worst_dict|e5_base",
+  "auto_valid": true,
+  "rank_worse": true,
+  "n": 21
+ },
+ {
+  "pool": "worst",
+  "group": "worst_dict|hybrid",
+  "auto_valid": false,
+  "rank_worse": false,
+  "n": 392
+ },
+ {
+  "pool": "worst",
+  "group": "worst_dict|hybrid",
+  "auto_valid": false,
+  "rank_worse": true,
+  "n": 237
+ },
+ {
+  "pool": "worst",
+  "group": "worst_dict|hybrid",
+  "auto_valid": true,
+  "rank_worse": false,
+  "n": 84
+ },
+ {
+  "pool": "worst",
+  "group": "worst_dict|hybrid",
+  "auto_valid": true,
+  "rank_worse": true,
+  "n": 19
+ },
+ {
+  "pool": "worst",
+  "group": "worst_mlm|bge_m3",
+  "auto_valid": false,
+  "rank_worse": false,
+  "n": 648
+ },
+ {
+  "pool": "worst",
+  "group": "worst_mlm|bge_m3",
+  "auto_valid": false,
+  "rank_worse": true,
+  "n": 467
+ },
+ {
+  "pool": "worst",
+  "group": "worst_mlm|bge_m3",
+  "auto_valid": true,
+  "rank_worse": false,
+  "n": 15
+ },
+ {
+  "pool": "worst",
+  "group": "worst_mlm|bge_m3",
+  "auto_valid": true,
+  "rank_worse": true,
+  "n": 3
+ },
+ {
+  "pool": "worst",
+  "group": "worst_mlm|bm25",
+  "auto_valid": false,
+  "rank_worse": false,
+  "n": 513
+ },
+ {
+  "pool": "worst",
+  "group": "worst_mlm|bm25",
+  "auto_valid": false,
+  "rank_worse": true,
+  "n": 490
+ },
+ {
+  "pool": "worst",
+  "group": "worst_mlm|bm25",
+  "auto_valid": true,
+  "rank_worse": false,
+  "n": 43
+ },
+ {
+  "pool": "worst",
+  "group": "worst_mlm|bm25",
+  "auto_valid": true,
+  "rank_worse": true,
+  "n": 27
+ },
+ {
+  "pool": "worst",
+  "group": "worst_mlm|e5_base",
+  "auto_valid": false,
+  "rank_worse": false,
+  "n": 555
+ },
+ {
+  "pool": "worst",
+  "group": "worst_mlm|e5_base",
+  "auto_valid": false,
+  "rank_worse": true,
+  "n": 564
+ },
+ {
+  "pool": "worst",
+  "group": "worst_mlm|e5_base",
+  "auto_valid": true,
+  "rank_worse": false,
+  "n": 8
+ },
+ {
+  "pool": "worst",
+  "group": "worst_mlm|e5_base",
+  "auto_valid": true,
+  "rank_worse": true,
+  "n": 7
+ },
+ {
+  "pool": "worst",
+  "group": "worst_mlm|hybrid",
+  "auto_valid": false,
+  "rank_worse": false,
+  "n": 401
+ },
+ {
+  "pool": "worst",
+  "group": "worst_mlm|hybrid",
+  "auto_valid": false,
+  "rank_worse": true,
+  "n": 463
+ },
+ {
+  "pool": "worst",
+  "group": "worst_mlm|hybrid",
+  "auto_valid": true,
+  "rank_worse": false,
+  "n": 36
+ },
+ {
+  "pool": "worst",
+  "group": "worst_mlm|hybrid",
+  "auto_valid": true,
+  "rank_worse": true,
+  "n": 13
+ }
+]

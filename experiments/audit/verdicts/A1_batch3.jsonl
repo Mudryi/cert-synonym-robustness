@@ -1,0 +1,171 @@
+{"annotator": "A1", "fluency": "natural", "item_id": "c001", "meaning": "yes", "t": "2026-10-13T11:11:03.103Z"}
+{"annotator": "A1", "fluency": "awkward", "item_id": "c002", "meaning": "yes", "t": "2026-10-13T11:11:13.493Z"}
+{"annotator": "A1", "fluency": "natural", "issues": ["term_changed"], "item_id": "c003", "meaning": "yes", "t": "2026-10-13T11:11:21.148Z"}
+{"annotator": "A1", "fluency": "natural", "issues": ["term_changed"], "item_id": "c004", "meaning": "yes", "t": "2026-10-13T11:41:22.388Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c005", "meaning": "yes", "t": "2026-10-13T11:11:29.888Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c006", "meaning": "yes", "t": "2026-10-13T11:11:34.906Z"}
+{"annotator": "A1", "fluency": "awkward", "issues": ["register"], "item_id": "c007", "meaning": "yes", "t": "2026-10-13T11:11:43.464Z"}
+{"annotator": "A1", "fluency": "awkward", "issues": ["register"], "item_id": "c008", "meaning": "partly", "t": "2026-10-13T11:11:52.398Z"}
+{"annotator": "A1", "fluency": "ungrammatical", "issues": ["morphology"], "item_id": "c009", "meaning": "no", "t": "2026-10-13T11:12:10.619Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c010", "meaning": "yes", "t": "2026-10-13T11:12:16.519Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c011", "meaning": "yes", "t": "2026-10-13T11:12:18.973Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c012", "meaning": "yes", "t": "2026-10-13T11:12:21.447Z"}
+{"annotator": "A1", "fluency": "awkward", "issues": ["term_changed"], "item_id": "c013", "meaning": "yes", "t": "2026-10-13T11:12:30.106Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c014", "meaning": "yes", "t": "2026-10-13T11:15:40.440Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c015", "meaning": "yes", "t": "2026-10-13T11:15:44.359Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c016", "meaning": "yes", "t": "2026-10-13T11:15:46.708Z"}
+{"annotator": "A1", "fluency": "natural", "issues": ["term_changed"], "item_id": "c017", "meaning": "partly", "t": "2026-10-13T11:15:53.774Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c018", "meaning": "yes", "t": "2026-10-13T11:15:56.773Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c019", "meaning": "yes", "t": "2026-10-13T11:15:59.142Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c020", "meaning": "partly", "t": "2026-10-13T11:16:04.996Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c021", "meaning": "partly", "t": "2026-10-13T11:16:11.821Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c022", "meaning": "yes", "t": "2026-10-13T11:16:14.998Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c023", "meaning": "yes", "t": "2026-10-13T11:16:18.519Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c024", "meaning": "yes", "t": "2026-10-13T11:16:22.502Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c025", "meaning": "yes", "t": "2026-10-13T11:16:24.524Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c026", "meaning": "yes", "t": "2026-10-13T11:16:47.372Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c027", "meaning": "yes", "t": "2026-10-13T11:16:49.981Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c028", "meaning": "yes", "t": "2026-10-13T11:16:51.669Z"}
+{"annotator": "A1", "fluency": "natural", "issues": ["register"], "item_id": "c029", "meaning": "partly", "t": "2026-10-13T11:16:55.500Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c030", "meaning": "yes", "t": "2026-10-13T11:16:58.706Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c031", "meaning": "yes", "t": "2026-10-13T11:17:01.863Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c032", "meaning": "yes", "t": "2026-10-13T11:17:08.062Z"}
+{"annotator": "A1", "fluency": "natural", "issues": ["term_changed"], "item_id": "c033", "meaning": "partly", "t": "2026-10-13T11:17:17.719Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c034", "meaning": "yes", "t": "2026-10-13T11:17:23.921Z"}
+{"annotator": "A1", "fluency": "natural", "issues": ["register"], "item_id": "c035", "meaning": "partly", "t": "2026-10-13T11:19:15.509Z"}
+{"annotator": "A1", "fluency": "natural", "issues": ["register"], "item_id": "c036", "meaning": "partly", "t": "2026-10-13T11:19:26.900Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c037", "meaning": "yes", "t": "2026-10-13T11:19:29.917Z"}
+{"annotator": "A1", "fluency": "awkward", "issues": ["morphology"], "item_id": "c038", "meaning": "yes", "t": "2026-10-13T11:19:36.446Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c039", "meaning": "yes", "t": "2026-10-13T11:19:39.365Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c040", "meaning": "yes", "t": "2026-10-13T11:19:42.590Z"}
+{"annotator": "A1", "fluency": "natural", "issues": ["scope_shift"], "item_id": "c041", "meaning": "partly", "t": "2026-10-13T11:19:53.194Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c042", "meaning": "yes", "t": "2026-10-13T11:19:58.880Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c043", "meaning": "yes", "t": "2026-10-13T11:20:00.818Z"}
+{"annotator": "A1", "fluency": "natural", "issues": ["wrong_sense", "scope_shift"], "item_id": "c044", "meaning": "partly", "t": "2026-10-13T11:20:11.921Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c045", "meaning": "yes", "t": "2026-10-13T11:20:16.797Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c046", "meaning": "yes", "t": "2026-10-13T11:20:22.080Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c047", "meaning": "yes", "t": "2026-10-13T11:20:24.308Z"}
+{"annotator": "A1", "fluency": "awkward", "issues": ["morphology"], "item_id": "c048", "meaning": "yes", "t": "2026-10-13T11:20:35.154Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c049", "meaning": "yes", "t": "2026-10-13T11:20:41.013Z"}
+{"annotator": "A1", "fluency": "awkward", "issues": ["register"], "item_id": "c050", "meaning": "partly", "t": "2026-10-13T11:21:37.489Z"}
+{"annotator": "A1", "fluency": "natural", "issues": ["register"], "item_id": "c051", "meaning": "partly", "t": "2026-10-13T11:21:43.916Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c052", "meaning": "yes", "t": "2026-10-13T11:21:49.112Z"}
+{"annotator": "A1", "fluency": "natural", "issues": ["term_changed"], "item_id": "c053", "meaning": "partly", "t": "2026-10-13T11:21:56.068Z"}
+{"annotator": "A1", "fluency": "natural", "issues": ["register"], "item_id": "c054", "meaning": "partly", "t": "2026-10-13T11:22:04.986Z"}
+{"annotator": "A1", "fluency": "natural", "issues": ["wrong_sense", "register"], "item_id": "c055", "meaning": "partly", "t": "2026-10-13T11:22:14.715Z"}
+{"annotator": "A1", "fluency": "natural", "issues": ["register"], "item_id": "c056", "meaning": "partly", "t": "2026-10-13T11:22:19.220Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c057", "meaning": "yes", "t": "2026-10-13T11:22:24.205Z"}
+{"annotator": "A1", "fluency": "awkward", "issues": ["term_changed"], "item_id": "c058", "meaning": "partly", "t": "2026-10-13T11:22:36.690Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c059", "meaning": "yes", "t": "2026-10-13T11:22:42.699Z"}
+{"annotator": "A1", "fluency": "awkward", "issues": ["morphology"], "item_id": "c060", "meaning": "yes", "t": "2026-10-13T11:22:51.594Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c061", "meaning": "yes", "t": "2026-10-13T11:22:59.659Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c062", "meaning": "yes", "t": "2026-10-13T11:23:02.140Z"}
+{"annotator": "A1", "fluency": "natural", "issues": ["term_changed"], "item_id": "c063", "meaning": "partly", "t": "2026-10-13T11:23:10.923Z"}
+{"annotator": "A1", "fluency": "natural", "issues": ["term_changed"], "item_id": "c064", "meaning": "partly", "t": "2026-10-13T11:23:16.399Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c065", "meaning": "yes", "t": "2026-10-13T11:23:21.930Z"}
+{"annotator": "A1", "fluency": "natural", "issues": ["register"], "item_id": "c066", "meaning": "yes", "t": "2026-10-13T11:23:27.236Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c067", "meaning": "yes", "t": "2026-10-13T11:23:35.679Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c068", "meaning": "yes", "t": "2026-10-13T11:23:42.185Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c069", "meaning": "yes", "t": "2026-10-13T11:25:43.288Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c070", "meaning": "yes", "t": "2026-10-13T11:25:47.828Z"}
+{"annotator": "A1", "fluency": "awkward", "issues": ["morphology"], "item_id": "c071", "meaning": "partly", "t": "2026-10-13T11:25:56.317Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c072", "meaning": "yes", "t": "2026-10-13T11:26:01.894Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c073", "meaning": "yes", "t": "2026-10-13T11:26:05.854Z"}
+{"annotator": "A1", "fluency": "natural", "issues": ["register"], "item_id": "c074", "meaning": "yes", "t": "2026-10-13T11:26:17.220Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c075", "meaning": "yes", "t": "2026-10-13T11:26:24.482Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c076", "meaning": "yes", "t": "2026-10-13T11:26:27.253Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c077", "meaning": "yes", "t": "2026-10-13T11:26:29.352Z"}
+{"annotator": "A1", "fluency": "natural", "issues": ["scope_shift"], "item_id": "c078", "meaning": "partly", "t": "2026-10-13T11:26:35.075Z"}
+{"annotator": "A1", "fluency": "natural", "issues": ["term_changed"], "item_id": "c079", "meaning": "yes", "t": "2026-10-13T11:26:41.071Z"}
+{"annotator": "A1", "fluency": "natural", "issues": ["scope_shift"], "item_id": "c080", "meaning": "partly", "t": "2026-10-13T11:26:48.298Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c081", "meaning": "yes", "t": "2026-10-13T11:26:52.980Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c082", "meaning": "yes", "t": "2026-10-13T11:26:55.109Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c083", "meaning": "partly", "t": "2026-10-13T11:27:00.127Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c084", "meaning": "yes", "t": "2026-10-13T11:27:05.906Z"}
+{"annotator": "A1", "fluency": "natural", "issues": ["morphology"], "item_id": "c085", "meaning": "partly", "t": "2026-10-13T11:27:14.260Z"}
+{"annotator": "A1", "fluency": "natural", "issues": ["scope_shift"], "item_id": "c086", "meaning": "partly", "t": "2026-10-13T11:27:26.327Z"}
+{"annotator": "A1", "fluency": "natural", "issues": ["scope_shift"], "item_id": "c087", "meaning": "partly", "t": "2026-10-13T11:27:33.089Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c088", "meaning": "yes", "t": "2026-10-13T11:27:40.653Z"}
+{"annotator": "A1", "fluency": "natural", "issues": ["term_changed"], "item_id": "c089", "meaning": "yes", "t": "2026-10-13T11:27:46.942Z"}
+{"annotator": "A1", "fluency": "natural", "issues": ["register", "term_changed"], "item_id": "c090", "meaning": "partly", "t": "2026-10-13T11:27:56.668Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c091", "meaning": "yes", "t": "2026-10-13T11:28:00.553Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c092", "meaning": "yes", "t": "2026-10-13T11:28:03.204Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c093", "meaning": "yes", "t": "2026-10-13T11:28:06.802Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c094", "meaning": "yes", "t": "2026-10-13T11:28:09.167Z"}
+{"annotator": "A1", "fluency": "natural", "issues": ["register"], "item_id": "c095", "meaning": "yes", "t": "2026-10-13T11:28:14.176Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c096", "meaning": "yes", "t": "2026-10-13T11:28:20.326Z"}
+{"annotator": "A1", "fluency": "natural", "issues": ["register"], "item_id": "c097", "meaning": "partly", "t": "2026-10-13T11:28:27.564Z"}
+{"annotator": "A1", "fluency": "awkward", "issues": ["register"], "item_id": "c098", "meaning": "partly", "t": "2026-10-13T11:28:33.983Z"}
+{"annotator": "A1", "fluency": "awkward", "issues": ["morphology"], "item_id": "c099", "meaning": "yes", "t": "2026-10-13T11:28:43.598Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c100", "meaning": "yes", "t": "2026-10-13T11:28:47.983Z"}
+{"annotator": "A1", "fluency": "natural", "issues": ["term_changed"], "item_id": "c101", "meaning": "yes", "t": "2026-10-13T11:28:54.732Z"}
+{"annotator": "A1", "fluency": "natural", "issues": ["term_changed"], "item_id": "c102", "meaning": "partly", "t": "2026-10-13T11:29:13.142Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c103", "meaning": "yes", "t": "2026-10-13T11:29:17.406Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c104", "meaning": "yes", "t": "2026-10-13T11:29:22.796Z"}
+{"annotator": "A1", "fluency": "natural", "issues": ["scope_shift"], "item_id": "c105", "meaning": "yes", "t": "2026-10-13T11:29:30.263Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c106", "meaning": "yes", "t": "2026-10-13T11:33:55.765Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c107", "meaning": "yes", "t": "2026-10-13T11:33:59.364Z"}
+{"annotator": "A1", "fluency": "natural", "issues": ["term_changed", "register"], "item_id": "c108", "meaning": "partly", "t": "2026-10-13T11:34:07.877Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c109", "meaning": "yes", "t": "2026-10-13T11:34:13.779Z"}
+{"annotator": "A1", "fluency": "natural", "issues": ["term_changed"], "item_id": "c110", "meaning": "partly", "t": "2026-10-13T11:34:22.125Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c111", "meaning": "yes", "t": "2026-10-13T11:34:24.627Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c112", "meaning": "yes", "t": "2026-10-13T11:34:32.162Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c113", "meaning": "yes", "t": "2026-10-13T11:34:35.489Z"}
+{"annotator": "A1", "fluency": "natural", "issues": ["register"], "item_id": "c114", "meaning": "partly", "t": "2026-10-13T11:34:43.882Z"}
+{"annotator": "A1", "fluency": "natural", "issues": ["register"], "item_id": "c115", "meaning": "partly", "t": "2026-10-13T11:34:49.747Z"}
+{"annotator": "A1", "fluency": "natural", "issues": ["term_changed"], "item_id": "c116", "meaning": "partly", "t": "2026-10-13T11:34:58.081Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c117", "meaning": "yes", "t": "2026-10-13T11:35:02.695Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c118", "meaning": "yes", "t": "2026-10-13T11:35:12.372Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c119", "meaning": "yes", "t": "2026-10-13T11:35:16.392Z"}
+{"annotator": "A1", "fluency": "awkward", "issues": ["morphology"], "item_id": "c120", "meaning": "yes", "t": "2026-10-13T11:35:22.853Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c121", "meaning": "yes", "t": "2026-10-13T11:35:27.228Z"}
+{"annotator": "A1", "fluency": "awkward", "issues": ["morphology"], "item_id": "c122", "meaning": "yes", "t": "2026-10-13T11:35:34.842Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c123", "meaning": "yes", "t": "2026-10-13T11:35:40.234Z"}
+{"annotator": "A1", "fluency": "natural", "issues": ["term_changed"], "item_id": "c124", "meaning": "partly", "t": "2026-10-13T11:35:50.989Z"}
+{"annotator": "A1", "fluency": "natural", "issues": ["scope_shift", "term_changed"], "item_id": "c125", "meaning": "partly", "t": "2026-10-13T11:36:02.945Z"}
+{"annotator": "A1", "fluency": "natural", "issues": ["term_changed"], "item_id": "c126", "meaning": "partly", "t": "2026-10-13T11:36:14.177Z"}
+{"annotator": "A1", "fluency": "natural", "issues": ["term_changed"], "item_id": "c127", "meaning": "partly", "t": "2026-10-13T11:36:18.830Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c128", "meaning": "yes", "t": "2026-10-13T11:36:24.724Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c129", "meaning": "yes", "t": "2026-10-13T11:36:27.741Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c130", "meaning": "yes", "t": "2026-10-13T11:36:34.783Z"}
+{"annotator": "A1", "fluency": "natural", "issues": ["term_changed"], "item_id": "c131", "meaning": "partly", "t": "2026-10-13T11:36:43.196Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c132", "meaning": "yes", "t": "2026-10-13T11:36:45.985Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c133", "meaning": "yes", "t": "2026-10-13T11:36:49.151Z"}
+{"annotator": "A1", "fluency": "natural", "issues": ["wrong_sense"], "item_id": "c134", "meaning": "partly", "t": "2026-10-13T11:36:55.444Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c135", "meaning": "yes", "t": "2026-10-13T11:37:04.049Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c136", "meaning": "yes", "t": "2026-10-13T11:37:06.827Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c137", "meaning": "yes", "t": "2026-10-13T11:37:10.707Z"}
+{"annotator": "A1", "fluency": "natural", "issues": ["scope_shift"], "item_id": "c138", "meaning": "partly", "t": "2026-10-13T11:37:23.351Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c139", "meaning": "yes", "t": "2026-10-13T11:41:28.333Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c140", "meaning": "yes", "t": "2026-10-13T11:37:37.454Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c141", "meaning": "yes", "t": "2026-10-13T11:37:40.230Z"}
+{"annotator": "A1", "fluency": "awkward", "issues": ["register", "wrong_sense"], "item_id": "c142", "meaning": "partly", "t": "2026-10-13T11:37:51.688Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c143", "meaning": "yes", "t": "2026-10-13T11:37:56.212Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c144", "meaning": "yes", "t": "2026-10-13T11:38:02.141Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c145", "meaning": "yes", "t": "2026-10-13T11:38:08.352Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c146", "meaning": "yes", "t": "2026-10-13T11:38:11.481Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c147", "meaning": "yes", "t": "2026-10-13T11:38:15.862Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c148", "meaning": "yes", "t": "2026-10-13T11:38:20.474Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c149", "meaning": "yes", "t": "2026-10-13T11:38:23.549Z"}
+{"annotator": "A1", "fluency": "awkward", "issues": ["morphology"], "item_id": "c150", "meaning": "yes", "t": "2026-10-13T11:38:30.660Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c151", "meaning": "yes", "t": "2026-10-13T11:38:36.340Z"}
+{"annotator": "A1", "fluency": "natural", "issues": ["register"], "item_id": "c152", "meaning": "partly", "t": "2026-10-13T11:38:57.822Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c153", "meaning": "yes", "t": "2026-10-13T11:39:09.720Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c154", "meaning": "yes", "t": "2026-10-13T11:39:43.354Z"}
+{"annotator": "A1", "fluency": "natural", "issues": ["term_changed"], "item_id": "c155", "meaning": "yes", "t": "2026-10-13T11:39:54.978Z"}
+{"annotator": "A1", "fluency": "awkward", "issues": ["morphology"], "item_id": "c156", "meaning": "yes", "t": "2026-10-13T11:40:03.216Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c157", "meaning": "yes", "t": "2026-10-13T11:40:12.396Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c158", "meaning": "partly", "t": "2026-10-13T11:40:24.888Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c159", "meaning": "yes", "t": "2026-10-13T11:40:27.822Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c160", "meaning": "yes", "t": "2026-10-13T11:40:30.156Z"}
+{"annotator": "A1", "fluency": "awkward", "issues": ["scope_shift", "wrong_sense"], "item_id": "c161", "meaning": "partly", "t": "2026-10-13T11:40:42.431Z"}
+{"annotator": "A1", "fluency": "natural", "issues": ["scope_shift"], "item_id": "c162", "meaning": "partly", "t": "2026-10-13T11:41:01.044Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c163", "meaning": "yes", "t": "2026-10-13T11:41:08.693Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "c164", "meaning": "yes", "t": "2026-10-13T11:41:10.587Z"}
+{"annotator": "A1", "fluency": "natural", "issues": ["register"], "item_id": "c165", "meaning": "yes", "t": "2026-10-13T11:41:17.068Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "y005", "meaning": "yes", "t": "2026-10-13T11:37:33.365Z"}
+{"annotator": "A1", "fluency": "natural", "issues": ["scope_shift"], "item_id": "y041", "meaning": "partly", "t": "2026-10-13T11:27:21.266Z"}
+{"annotator": "A1", "fluency": "natural", "item_id": "y045", "meaning": "yes", "t": "2026-10-13T11:28:18.071Z"}
+{"annotator": "A1", "fluency": "natural", "issues": ["register"], "item_id": "y051", "meaning": "partly", "t": "2026-10-13T11:40:52.956Z"}
+{"annotator": "A1", "fluency": "natural", "issues": ["register"], "item_id": "y055", "meaning": "partly", "t": "2026-10-13T11:28:59.631Z"}
+{"annotator": "A1", "fluency": "awkward", "issues": ["register"], "item_id": "y083", "meaning": "yes", "t": "2026-10-13T11:38:50.159Z"}

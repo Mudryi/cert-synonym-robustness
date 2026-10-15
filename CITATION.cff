@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the paper."
+title: "Beyond Average Robustness: Validity-Aware Evaluation of Synonym Attacks on Ukrainian Document Retrieval"
+authors:
+  - family-names: Mudryi
+    given-names: Volodymyr
+repository-code: "https://github.com/Mudryi/cert-synonym-robustness"
+license: MIT

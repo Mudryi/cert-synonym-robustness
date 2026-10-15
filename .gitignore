@@ -1,0 +1,40 @@
+# secrets and environments
+.env
+.venv/
+__pycache__/
+*.pyc
+
+# large or regenerable experiment artefacts (kept on disk, not in git)
+experiments/out/cache/
+experiments/out/**/runs/
+experiments/out/**/runs_methods/
+experiments/out/**/per_query_*.csv
+experiments/out/**/expansion_candidates_*.jsonl
+experiments/out/**/*.tmp
+experiments/out/smoke/
+experiments/out/smoke_run/
+experiments/out/smoke_llm_cache.jsonl
+experiments/out/STOP
+experiments/out/**/models/
+experiments/out/**/ft_models/
+
+# crawler cache and state (rebuild with `main.py crawl`)
+data/raw/
+data/state/
+data/reports/pilot/
+data/reports/*.log
+data/reports/*.stdout
+
+# experiment outputs: only RESULTS.md, figures and final reports are versioned;
+# intermediate files are in the Hugging Face dataset
+experiments/out/*
+!experiments/out/RESULTS.md
+!experiments/out/tier2/
+experiments/out/tier2/*
+!experiments/out/tier2/figures/
+!experiments/out/tier2/report_final.md
+!experiments/out/tier2/report_worst_verified*.md
+!experiments/out/tier2/report_protocol_audit.md
+!experiments/out/tier2/report_stability.md
+!experiments/out/tier2/summary_worst_verified.json
+!experiments/out/tier2/summary_protocol_audit.json

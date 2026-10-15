@@ -1,0 +1,42 @@
+{
+ "article_id": "6282946",
+ "requested_id": "6282946",
+ "request_url": "https://cert.gov.ua/api/articles/byId?id=6282946&lang=uk",
+ "request_lang": "uk",
+ "fetched_at": "2026-10-11T20:07:38Z",
+ "inline_images_removed": [
+  {
+   "mime": "image/png",
+   "sha256": "e6e626ac8e40df6f467731f48ad153554104491c50133ebd200b8261cbe2ed71",
+   "bytes": 2166624
+  },
+  {
+   "mime": "image/png",
+   "sha256": "403fac6ccc875a1f23a2745426ce58d4ea0319aa3edfe8b24415d2705c5c3340",
+   "bytes": 1810239
+  }
+ ],
+ "payload": {
+  "id": 6282946,
+  "title": "Цільова шпигунська активність UAC-0226 у відношенні осередків інновацій, державних і правоохоронних органів з використанням стілеру GIFTEDCROOK (CERT-UA#14303)",
+  "description": "<p>Урядовою командою реагування на комп'ютерні надзвичайні події України CERT-UA, починаючи з лютого 2025 року, відстежується цільова активність, яка здійснюється з метою шпигунства у відношенні осередків розвитку інновацій у військовій сфері, військових формувань, правоохоронних органів України та органів місцевого самоврядування, особливо тих, що розташовані вздовж східного кордону країни.</p>",
+  "text": "<p><strong>Загальна інформація</strong></p><p>Урядовою командою реагування на комп'ютерні надзвичайні події України CERT-UA, починаючи з лютого 2025 року, відстежується цільова активність, яка здійснюється з метою шпигунства у відношенні осередків розвитку інновацій у військовій сфері, військових формувань, правоохоронних органів України та органів місцевого самоврядування, особливо тих, що розташовані вздовж східного кордону країни.</p><p>Первинна компрометація забезпечується шляхом розповсюдження електронних листів із вкладеннями у вигляді XLS-документів з макросами (розширення \".xlsm\"), назви/теми яких можуть стосуватися питань розмінування території, адміністративних штрафів, виробництва БПЛА, компенсації за зруйноване майно тощо. При цьому, \"корисне навантаження\" представлене у вигляді base64-кодованих рядків, що зберігаються в клітинках Excel-таблиці. Згаданий макрос забезпечує перетворення (декодування) base64-кодованих рядків у виконувані файли, їх збереження на комп'ютер без розширення (!) та подальший запуск.&nbsp;</p><p>Станом на квітень 2025 року відомо про два види програмних засобів реалізації кіберзагрози. Перший - .NET-програма, в ресурсах якої зберігається PowerShell-сценарій, що функціонально є reverse-shell'ом, запозиченим з публічного GitHub репозиторію PSSW100AVB. Другий, класифікований як GIFTEDCROOK, С/C++ програма-стілер, що, серед іншого, забезпечує отримання баз даних Інтернет-браузерів Chrome, Edge, Firefox (Cookie, історія, збережені автентифікаційні дані), їх архівування за допомогою PowerShell-командлету Compress-Archive, та подальшу ексфільтрацію до Telegram.</p><p>Описаний кластер кіберзагроз відстежується за ідентифікатором UAC-0226.</p><p>Завдяки злагодженій роботі суб'єктів кіберзахисту, зокрема, оперативному обміну інформацією, по кожному з аналогічних кіберінцидентів CERT-UA вживаються ефективні заходи реагування. У випадку виявлення ознак здійснення кібератак просимо невідкладно інформувати будь-яким з доступних засобів зв'язку.</p><p>Звертаємо увагу, що розсилання електронних листів здійснюється з використанням скомпрометованих облікових записів, в тому числі через вебінтерфейс. У цьому зв'язку системних адміністраторів просимо окремо перевірити наявність, повноту та глибину журналів поштового та вебсерверів.</p><p><br></p><p><strong>Індикатори кіберзагроз</strong></p><p><em>Файли:</em></p><pre class=\"ql-syntax\" spellcheck=\"false\">(28.02.2025)\n4a2ec9f72b910c0a8e3efc4c334f5bad&nbsp; &nbsp; f8a31715840852e8ef04016b31f909123f2aa864f3850c45eb511fd1885b4037&nbsp; &nbsp; 28_02.2025.xlsm&nbsp;\ne5f4188682e40e79800ccd165289c844&nbsp; &nbsp; e852d254395ef04308bcde37c3ee9725ab23ca82a202e7d69028c8bee0f0d05f&nbsp; &nbsp; Microsoft OneDrive Assistant\n1b71d870f34587e0a2717f9925086eab&nbsp; &nbsp; a2f651d39b8d97221ad36577e9b50beabdf0ad46aec0c29b6cff624e1e2ffd0c&nbsp; &nbsp; kpbkewf32mm.ps1\n(26.03.2025)\n333b09f8865aae5d257b6f11f2fe5d08&nbsp; &nbsp; a02506468e632875a2c9c9c16e730b8bdc52f7450b28ee7bd8f5ac014b264e53&nbsp; &nbsp; Компенсація за зруйноване майно.xlsm&nbsp;\nb3831f0bace886aaba81873edc20aba4&nbsp; &nbsp; 40e68d7240e692ef3301cfaa92a04e0af65f2d725cbfa6711c3154b627fec0f1&nbsp; &nbsp; Адміністративні штрафи співробiтників організації 921867.xlsm\n100cd9d907e986ba8d5fc6d0488557d9&nbsp; &nbsp; 58b38775f655498b134ce8cd52ab0aba05b710f7611e41cbdffdc3597c5d5f3d&nbsp; &nbsp; -\n8b694068e5088e0c32739956e28b077e&nbsp; &nbsp; 8427dc6e7da4c163d20c7f188232cf3f83c78ddb6fcad04cec84b33e0f9bdfc0&nbsp; &nbsp; Windows Service (GIFTEDCROOK)\n0a178f76c48c038e8bad03a62b52cfc9&nbsp; &nbsp; 78ea83bfbca85a39e59fa35c8f704873f3fdad3a5278430e75286247530042b8&nbsp; &nbsp; Windows Telemetry\n671b42e854ae2ee3341456fbec7c7787&nbsp; &nbsp; 92183f89b115881535b1bf1985f3ee4b4ebf077bec8cc4de0c6c6e266da0cb87&nbsp; &nbsp; nnnnrth.ps1\n(02.04.2025)\n3394fc2ba0a976818691751aa7f86d05&nbsp; &nbsp; 0a4777725673f9f7114ddceddd80e5a72ad3a4d20fd2014d4c60e2cc1a6cefc2&nbsp; &nbsp; Акцiя Defender ARMY (2).xlsm\nd280a258704bf9155bceaf4f731988ea&nbsp; &nbsp; 7ca3f2505e1778e6de3927571ba49d27b36447e6c28a60161d55fd2254966bce&nbsp; &nbsp; Svchost (GIFTEDCROOK)\ndaffbfd71f8595ab6d6b8c94cc81a778&nbsp; &nbsp; 24a60e50ed8469fc31afa9abfc361291f72922430cf062bf9c4ac7e6d84b5fad&nbsp; &nbsp; Адміністративні штрафи 31.03 співробiтників організації 1744269.xlsm\n037e2ca3c97e1a5645cdc45fb0d98064&nbsp; &nbsp; 2930ad9be3fec3ede8f49cecd33505132200d9c0ce67221d0b786739f42db18a&nbsp; &nbsp; Runtime (GIFTEDCROOK)\n(04.04.2025)\ncffdd24742610fe5710dbc9ebd258c64&nbsp; &nbsp; c8bb0dbc952c9dc2bbc550a300ed033ad5d2416390891ed1e800b08ad3ab5d3a&nbsp; &nbsp; Адміністративні штрафи організації 51324.xlsm&nbsp;\nf62ea2cbd220596072010e91dd65b673&nbsp; &nbsp; 530185fac69e756fb62f23e21e7c0b0828a964b91bbf40f1d04fc2136c1b6dd1&nbsp; &nbsp; SysAnalyzer (GIFTEDCROOK)\n9f6c82c240ba5ef6bb85d28c0cdf7f7f&nbsp; &nbsp; c27cf714293c496c8fc05b330a57bcfcb6189267e2818062660de88b0f3a25cd&nbsp; &nbsp; Адміністративні штрафи співробiтників організації 291081.xlsm&nbsp;\nb63b783a9aca15726babd599d2963869&nbsp; &nbsp; ff1be55fb5bb3b37d2e54adfbe7f4fbba4caa049fad665c8619cf0666090748a&nbsp; &nbsp; ServiceHub (GIFTEDCROOK)\n(07.04.2025)\n966373dbe28f4111f6ce47038fb343da    8a638a788adb0edb6622b16fd8783bc225470f8ff94b1bba4a94b4d8c105acef    Адміністративні штрафи співробiтників організації 90482.xlsm \n9c03d0da190d1046583ba9fa83a8bcd3    d7a66fd37e282d4722d53d31f7ba8ecdabc2e5f6910ba15290393d9a2f371997    FlashAssistant (GIFTEDCROOK)\n</pre><p><em>Хостові:</em></p><pre class=\"ql-syntax\" spellcheck=\"false\">%PROGRAMDATA%\\Microsoft OneDrive Assistant\\Microsoft OneDrive Assistant\n%PROGRAMDATA%\\Windows Service\\Windows Service\n%PROGRAMDATA%\\Windows Telemetry\\Windows Telemetry\n%PROGRAMDATA%\\Microsoft Runtime\\Runtime\n%PROGRAMDATA%\\Svchost\\Svchost\n%PROGRAMDATA%\\Microsoft ServiceHub\\ServiceHub\n%PROGRAMDATA%\\SysAnalyzer\\SysAnalyzer\n%PROGRAMDATA%\\FlashAssistant\\FlashAssistant\n%TMP%\\nmpoyqv5l0ig\\\n%TMP%\\status.zip\npowershell -Command Compress-Archive -Path %TMP%\\nmpoyqv5l0ig\\* -DestinationPath %TMP%\\status.zip\n</pre><p><em>Мережеві:</em></p><pre class=\"ql-syntax\" spellcheck=\"false\">149[.]102.246.110 (VPN; 2025-02-28 00:00:22+0200 - 2025-02-28 16:10:29+0200)\n(tcp)://37[.]120.239.187:6501\n37[.]120.239.187 (C2)\n\n(tcp)://89[.]44.9.186:3240\n89[.]44.9.186 (C2)\n</pre><pre class=\"hidden\" spellcheck=\"false\">149.102.246.110\ntcp://37.120.239.187:6501\n37.120.239.187 (C2)\ntcp://89.44.9.186:3240\n89.44.9.186 (C2)\n</pre><p><br></p><p><strong>Графічні зображення</strong></p><p><img src=\"data-removed:image/png;sha256=e6e626ac8e40df6f467731f48ad153554104491c50133ebd200b8261cbe2ed71;bytes=2166624\"></p><p>Рис.1 Приклад ланцюга ураження (GIFTEDCROOK)</p><p><img src=\"data-removed:image/png;sha256=403fac6ccc875a1f23a2745426ce58d4ea0319aa3edfe8b24415d2705c5c3340;bytes=1810239\"></p><p>Рис.2 Приклади електронних листів та revers-shell'у</p>",
+  "image": "https://cert.gov.ua/assets/img/fon6.jpg",
+  "previous": {
+   "id": 6282902,
+   "name": "UAC-0219: кібершпигунство з використанням PowerShell-стілеру WRECKSTEEL (CERT-UA#14283)"
+  },
+  "next": {
+   "id": 6284080,
+   "name": "Кібератаки UAC-0001 (APT28) у відношенні державних органів із застосуванням BEARDSHELL та COVENANT "
+  },
+  "tags": [
+   {
+    "id": 30,
+    "name": "ШПЗ"
+   }
+  ],
+  "date": "06.04.2025",
+  "langId": null
+ }
+}

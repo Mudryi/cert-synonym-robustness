@@ -1,0 +1,42 @@
+{
+ "article_id": "2707",
+ "requested_id": "2707",
+ "request_url": "https://cert.gov.ua/api/articles/byId?id=2707&lang=uk",
+ "request_lang": "uk",
+ "fetched_at": "2026-10-11T20:07:24Z",
+ "inline_images_removed": [
+  {
+   "mime": "image/png",
+   "sha256": "a01487b6f1c403726511569dd5aad6b80c27373b1f70e69d7f108a48d4a4d9be",
+   "bytes": 2889
+  },
+  {
+   "mime": "image/png",
+   "sha256": "fa5977a89525889b868e42040dafe29198df95b681f69a09e460c67ff585a3a4",
+   "bytes": 70204
+  }
+ ],
+ "payload": {
+  "id": 2707,
+  "title": "Нові хвилі масових розсилок листів з #Smokeloader",
+  "description": "<p>Сьогодні, 13.12.2018, зафіксована масова розсилка листів з шкідливим вкладенням, який не детектується популярними в України антивірусними засобами. Вкладення з розширенням.lzh (архів), який містить в собі 2 файли, один з яких є підробленим, або раніше викраденим документом формату xlsx (для прикриття), а інший – JS-скрипт, який при активації - завантажує шкідливе програмне забезпечення&nbsp;&nbsp;в директорію %Temp%&nbsp;, яке використовується для завантаження інших шкідливих програмних забезпечень.</p>",
+  "text": "<p>Сьогодні, 13.12.2018, зафіксована масова розсилка листів з шкідливим вкладенням, який не детектується популярними в України антивірусними засобами. Вкладення з розширенням.lzh (архів), який містить в собі 2 файли, один з яких є підробленим, або раніше викраденим документом формату xlsx (для прикриття), а інший – JS-скрипт, який при активації - завантажує шкідливе програмне забезпечення&nbsp;<a href=\"https://twitter.com/hashtag/Smokeloader?src=hash\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: rgb(0, 123, 255);\">#Smokeloader</a>&nbsp;в директорію %Temp%&nbsp;, яке використовується для завантаження інших шкідливих програмних забезпечень.</p><p><br></p><p>Звертаємо Вашу увагу, що текст повідомлення та назви файлів українською мовою, що незважаючи на поширення у всьому світі&nbsp;<a href=\"https://twitter.com/hashtag/Smokeloader?src=hash\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: rgb(0, 123, 255);\">#Smokeloader</a>, може свідчити про таргетованість атаки на Україну. Даний вірус являється завантажувачем і може бути використаний для завантаження будь-якого іншого шкідливого програмного забезпечення без Вашої згоди і відома.</p><p><img src=\"data-removed:image/png;sha256=a01487b6f1c403726511569dd5aad6b80c27373b1f70e69d7f108a48d4a4d9be;bytes=2889\"></p><p><img src=\"data-removed:image/png;sha256=fa5977a89525889b868e42040dafe29198df95b681f69a09e460c67ff585a3a4;bytes=70204\"></p><h3><strong>Рекомендації:</strong></h3><ul><li>Не відкривайте прикріплені файли&nbsp;в листах, яких Ви не очікували отримати.</li><li>Перевіряйте відправника повідомлення.</li><li>Блокуйте WSH або трафік cscript/wscript.</li><li>Фільтруйте нестандартні архіви та скриптові файли.</li><li>Блокуйте на Proxy нетипові User Agent.</li><li>Виконуйте основні&nbsp;<a href=\"https://cert.gov.ua/recommendation/31\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: rgb(0, 123, 255);\">правила кібергігієни&nbsp;</a>.</li></ul><p><strong>Cхема:</strong></p><p>email attach (lzh) &gt; js &gt; cmd.exe &gt; powershell.exe &gt; (new-object system.net.webclient).downloadfile &gt;&nbsp;%Temp%ckZ89.ExE</p><p><strong>Індикатори компрометації (IOC):</strong></p><p><strong>Шкідливі домени та ІР (C2):</strong></p><p>http://chubanomania[.]icu/prima/spi.exe?rCuz&nbsp;(IP:&nbsp;93.179.69.41)</p><p><br></p><p><strong>Шкідливі файли:</strong></p><p>Payload:&nbsp;<strong>spi.exe</strong>&nbsp;(зберігається&nbsp;<strong>під назвою&nbsp;ckZ89.ExE</strong>)</p><p>MD5&nbsp;&nbsp;&nbsp;&nbsp;71e64237e53f95096710854badd1d348</p><p>SHA-1&nbsp;&nbsp;1d7c1ff5b361d823feb56ca134e026932884440e</p><p><a href=\"https://www.virustotal.com/#/file/71e64237e53f95096710854badd1d348\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: rgb(0, 123, 255);\">https://www.virustotal.com/#/file/71e64237e53f95096710854badd1d348</a></p><p>&nbsp;</p><p>Прикріплений архів:&nbsp;<strong>До оплати від 11.12.18.lzh</strong></p><p>MD5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3d6880d23b31ce467ede70ea2bd33fa5</p><p>SHA-1&nbsp;&nbsp;&nbsp;&nbsp;2dd6e49ff82816e191e00d31ab228355d584bd14</p><p><a href=\"https://www.virustotal.com/#/file/3d6880d23b31ce467ede70ea2bd33fa5\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: rgb(0, 123, 255);\">https://www.virustotal.com/#/file/3d6880d23b31ce467ede70ea2bd33fa5</a></p><p>&nbsp;</p><p>Прикріплений архів:&nbsp;<strong>Рахунки и новые списки.lzh</strong></p><p>MD5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fa9beed6ac251f30e2e29c3786371381</p><p>SHA-1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;584400018c017adbd03f154ba992a94bc9f0f436</p><p><a href=\"https://www.virustotal.com/#/file/036d1c59ce5a8857e3707394c9929cd31eaf1f9c4bfef161f76de2c3ee12f37a/detection\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: rgb(0, 123, 255);\">https://www.virustotal.com/#/file/036d1c59ce5a8857e3707394c9929cd31eaf1f9c4bfef161f76de2c3ee12f37a/detection</a></p><p>&nbsp;</p><p>JS-завантажувач:&nbsp;<strong>Рахунки за выполненные работы от 11.12.2018.js</strong></p><p>MD5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dbadc05a3022d01b1c5c036cacb92d22</p><p>SHA-1&nbsp;&nbsp;&nbsp;&nbsp;718e87638bbe563153504217b035ab3268b32af8</p><p><a href=\"https://www.virustotal.com/#/file/7e11114a7b41b67f15ba59089f36627f9b260428dbdb218a56e8f6942e464af5/detection\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: rgb(0, 123, 255);\">https://www.virustotal.com/#/file/7e11114a7b41b67f15ba59089f36627f9b260428dbdb218a56e8f6942e464af5/detection</a></p><p>&nbsp;</p><p>JS-завантажувач:&nbsp;<strong>До оплати рах.ф. 74 - 2018р.js</strong></p><p>md5&nbsp;&nbsp;&nbsp;&nbsp;dbd464ecd6c8caa277482821d0798d92&nbsp;</p><p>SHA-1&nbsp;&nbsp;&nbsp;&nbsp;ccc15e7c2e06d009085a900eb4318f290f6b541c</p><p><a href=\"https://www.virustotal.com/#/file/4bf63f05a6d32ed3a6c15103ec69d073eeacdf14b3a77581b417c2e10b66ec9d/detection\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: rgb(0, 123, 255);\">https://www.virustotal.com/#/file/4bf63f05a6d32ed3a6c15103ec69d073eeacdf14b3a77581b417c2e10b66ec9d/detection</a></p>",
+  "image": "https://cert.gov.ua/img/articles/2707/73.jpeg",
+  "previous": {
+   "id": 2803,
+   "name": "Нові хвилі масових розсилок вірусу-шифрувальника Troldesh"
+  },
+  "next": {
+   "id": 2703,
+   "name": "Нові поширення шифрувальника Troldesh/Shade"
+  },
+  "tags": [
+   {
+    "id": 30,
+    "name": "ШПЗ"
+   }
+  ],
+  "date": "13.12.2018",
+  "langId": null
+ }
+}
